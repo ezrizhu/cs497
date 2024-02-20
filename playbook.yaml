@@ -1,0 +1,54 @@
+- hosts: all
+  vars:
+    commands:
+      - cmd: capsh --print
+        output_dir: caps
+      - cmd: uname -a
+        output_dir: uname
+      - cmd: ldd --version
+        output_dir: ldd
+      - cmd: whereis python
+        output_dir: py_where
+      - cmd: python --version
+        output_dir: py_where
+      - cmd: sysctl kernel.unprivileged_userns_clone
+        output_dir: userns_clone
+      - cmd: unshare --map-root-user ping -c1 1.1
+        output_dir: unshare_ping
+      - cmd: ls -lah /sbin/init
+        output_dir: init
+      - cmd: ls -lah /sbin/sh
+        output_dir: sh
+      - cmd: ls /sys
+        output_dir: sysfs
+      - cmd: ls /proc
+        output_dir: profcs
+      - cmd: ls /
+        output_dir: root
+      - cmd: sudo cat /etc/sudoers | grep -i secure_path
+        output_dir: secure_path
+      - cmd: systemctl --version
+        output_dir: systemd_ver
+
+  tasks:
+    - local_action:
+        module: file
+        path: "out/{{ item.output_dir }}"
+        state: directory
+      loop: "{{ commands }}"
+
+    - name: Run commands and save output
+      command: "{{ item.cmd }}"
+      register: output
+      ignore_errors: true
+      loop: "{{ commands }}"
+      loop_control:
+        extended: yes 
+
+    - local_action:
+        module: copy
+        content: "{{ item.stdout }}"
+        dest: "out/{{ item.item.output_dir }}/{{ inventory_hostname }}.out"
+      loop: "{{ output.results }}"
+      loop_control:
+        label: "{{ item.item.cmd }}"
