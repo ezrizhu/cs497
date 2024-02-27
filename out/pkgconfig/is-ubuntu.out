@@ -1,0 +1,64 @@
+applewmproto       AppleWMProto - AppleWM extension headers
+bash-completion    bash-completion - programmable completion for the bash shell
+bigreqsproto       BigReqsProto - BigReqs extension headers
+blas               openblas-blas - Optimized BLAS (linear algebra) library based on GotoBLAS2
+blas-netlib        BLAS - FORTRAN reference implementation of BLAS Basic Linear Algebra Subprograms
+compositeproto     CompositeExt - Composite extension headers
+damageproto        DamageProto - Damage extension headers
+dmxproto           DMXProto - DMX extension headers
+dpmsproto          DPMSProto - DPMS extension headers
+dri2proto          DRI2Proto - DRI2 extension headers
+dri3proto          DRI3Proto - DRI3 extension headers
+egl                EGL - EGL library and headers
+expat              expat - expat XML parser
+fixesproto         FixesProto - X Fixes extension headers
+fontsproto         FontsProto - Fonts extension headers
+gl                 GL - Legacy OpenGL and GLX library and headers.
+glesv1_cm          GLESv1_CM - OpenGL ES-CM v1 library and headers.
+glesv2             GLESv2 - OpenGL ES v2/v3 library and headers.
+glproto            GLProto - GL extension headers
+glx                GLX - GLX library and headers.
+inputproto         InputProto - Input extension headers
+iso-codes          iso-codes - ISO country, language, script and currency codes and translations
+kbproto            KBProto - KB extension headers
+lapack             openblas-lapack - Optimized BLAS (linear algebra) library, LAPACK
+lapack-netlib      LAPACK - FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+libcrypt           libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libdmmp            libdmmp - Device mapper multipath management library
+libglvnd           libglvnd - Vendor-neutral OpenGL dispatch library vendor interface
+libnsl             libnsl - Library containing NIS functions using TI-RPC (IPv6 enabled)
+libtirpc           libtirpc - Transport Independent RPC Library
+libxcrypt          libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+openblas           openblas - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version
+opengl             OpenGL - OpenGL (without GLX) library and headers.
+presentproto       PresentProto - Present extension headers
+pthread-stubs      pthread stubs - Meta package for pthread symbols - defaults to heavyweight ones if the C runtime does not provide lightweight ones.
+python-3.10        Python - Build a C extension for Python
+python-3.10-embed  Python - Embed Python into an application
+python3            Python - Build a C extension for Python
+python3-embed      Python - Embed Python into an application
+randrproto         RandrProto - Randr extension headers
+recordproto        RecordProto - Record extension headers
+renderproto        RenderProto - Render extension headers
+resourceproto      ResourceProto - Resource extension headers
+scrnsaverproto     ScrnSaverProto - ScrnSaver extension headers
+shared-mime-info   shared-mime-info - Freedesktop common MIME database
+systemd            systemd - systemd System and Service Manager
+udev               udev - udev
+videoproto         VideoProto - Video extension headers
+x11                X11 - X Library
+xau                Xau - X authorization file management libary
+xcb                XCB - X-protocol C Binding
+xcmiscproto        XCMiscProto - XCMisc extension headers
+xdmcp              Xdmcp - X Display Manager Control Protocol library
+xextproto          XExtProto - XExt extension headers
+xf86bigfontproto   XF86BigFontProto - XF86BigFont extension headers
+xf86dgaproto       XF86DGAProto - XF86DGA extension headers
+xf86driproto       XF86DRIProto - XF86DRI extension headers
+xf86vidmodeproto   XF86VidModeProto - XF86VidMode extension headers
+xineramaproto      XineramaProto - Xinerama extension headers
+xkeyboard-config   XKeyboardConfig - X Keyboard configuration data
+xorg-sgml-doctools xorg-sgml-doctools - Stylesheets and entities for X.Org documentation
+xproto             Xproto - Xproto headers
+xtrans             XTrans - Abstract network code for X
+zlib               zlib - zlib compression library

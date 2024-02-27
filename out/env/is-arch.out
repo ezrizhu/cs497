@@ -1,0 +1,20 @@
+SHELL=/usr/bin/bash
+PWD=/root
+LOGNAME=root
+XDG_SESSION_TYPE=tty
+_=/usr/bin/python3.11
+MOTD_SHOWN=pam
+HOME=/root
+SSH_CONNECTION=198.8.59.1 42340 45.63.22.140 22
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+USER=root
+SHLVL=1
+XDG_SESSION_ID=7
+XDG_RUNTIME_DIR=/run/user/0
+SSH_CLIENT=198.8.59.1 42340 22
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+MAIL=/var/spool/mail/root
+SSH_TTY=/dev/pts/0
+LC_CTYPE=C.UTF-8

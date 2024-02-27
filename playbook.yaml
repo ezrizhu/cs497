@@ -25,10 +25,16 @@
         output_dir: profcs
       - cmd: ls /
         output_dir: root
-      - cmd: sudo cat /etc/sudoers | grep -i secure_path
+      - cmd: cat /etc/sudoers
         output_dir: secure_path
       - cmd: systemctl --version
         output_dir: systemd_ver
+      - cmd: env
+        output_dir: env
+      - cmd: pkg-config --list-all
+        output_dir: pkgconfig
+      - cmd: sysctl -a
+        output_dir: sysctl
 
   tasks:
     - local_action:
@@ -49,6 +55,13 @@
         module: copy
         content: "{{ item.stdout }}"
         dest: "out/{{ item.item.output_dir }}/{{ inventory_hostname }}.out"
+      loop: "{{ output.results }}"
+      loop_control:
+        label: "{{ item.item.cmd }}"
+    - local_action:
+        module: copy
+        content: "{{ item.stderr }}"
+        dest: "out/{{ item.item.output_dir }}/{{ inventory_hostname }}.err"
       loop: "{{ output.results }}"
       loop_control:
         label: "{{ item.item.cmd }}"

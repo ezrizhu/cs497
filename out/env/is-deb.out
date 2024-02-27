@@ -1,0 +1,19 @@
+USER=root
+SSH_CLIENT=198.8.59.1 51644 22
+XDG_SESSION_TYPE=tty
+SHLVL=0
+MOTD_SHOWN=pam
+HOME=/root
+SSH_TTY=/dev/pts/0
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+LOGNAME=root
+_=/bin/sh
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+XDG_SESSION_ID=21
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+XDG_RUNTIME_DIR=/run/user/0
+LANG=en_US.UTF-8
+SHELL=/bin/bash
+PWD=/root
+SSH_CONNECTION=198.8.59.1 51644 140.82.12.172 22
