@@ -1,0 +1,230 @@
+audit                          libaudit - Libraries needed for apps that use the kernel audit framework
+auparse                        libauparse - Library for apps that want to parse and interpret audit events
+bash                           bash - Bash headers for bash loadable builtins
+basicobjects                   basicobjects - Library contains basic objects like dynamic string
+bdw-gc                         Boehm-Demers-Weiser Conservative Garbage Collector - A garbage collector for C and C++
+blkid                          blkid - Block device id library
+bluez                          BlueZ - Bluetooth protocol stack for Linux
+bzip2                          bzip2 - A file compression library
+collection                     collection - A data-type to collect data in a heirarchical structure for easy iteration and serialization
+com_err                        com_err - Common error description library
+dbus-1                         dbus - Free desktop message bus
+devmapper                      devmapper - device-mapper library
+devmapper-event                devmapper-event - device-mapper event library
+dhash                          dhash - A hash table which will dynamically resize to achieve optimal storage & access time properties
+duktape                        duktape - Embeddable Javascript engine
+e2p                            e2p - Ext2fs userspace programs utility library
+efiboot                        efiboot - UEFI Boot variable support
+efisec                         efisec - UEFI Security Features
+efivar                         efivar - UEFI Variable Management
+expat                          expat - expat XML parser
+ext2fs                         ext2fs - Ext2fs library
+fdisk                          fdisk - fdisk library
+form                           formw - ncurses 6.4 add-on library
+formw                          formw - ncurses 6.4 add-on library
+fuse3                          fuse3 - Filesystem in Userspace
+gio-2.0                        GIO - glib I/O library
+gio-unix-2.0                   GIO unix specific APIs - unix specific headers for glib I/O library
+glib-2.0                       GLib - C Utility Library
+gmodule-2.0                    GModule - Dynamic module loader for GLib
+gmodule-export-2.0             GModule - Dynamic module loader for GLib
+gmodule-no-export-2.0          GModule - Dynamic module loader for GLib
+gmp                            GNU MP - GNU Multiple Precision Arithmetic Library
+gmpxx                          GNU MP C++ - GNU Multiple Precision Arithmetic Library (C++ bindings)
+gnutls                         GnuTLS - Transport Security Layer implementation for the GNU system
+gobject-2.0                    GObject - GLib Type, Object, Parameter and Signal Library
+gpg-error                      gpg-error - GPG Runtime
+gpgme-glib                     gpgme-glib - GnuPG Made Easy to access GnuPG with Glib
+gpgme                          gpgme - GnuPG Made Easy to access GnuPG
+gssrpc                         gssrpc - GSSAPI RPC implementation
+gthread-2.0                    GThread - Thread support for GLib
+guile-3.0                      GNU Guile - GNU's Ubiquitous Intelligent Language for Extension
+history                        History - Gnu History library for managing previously-entered lines
+hogweed                        Hogweed - Nettle low-level cryptographic library (public-key algorithms)
+hwdata                         hwdata - Hardware identification and configuration data
+icu-i18n                       icu-i18n - International Components for Unicode: Internationalization library
+icu-io                         icu-io - International Components for Unicode: Stream and I/O Library
+icu-uc                         icu-uc - International Components for Unicode: Common and Data libraries
+ini_config                     ini_config - Library to process config files in INI format into a libcollection data structure
+isl                            isl - isl Library
+jansson                        Jansson - Library for encoding, decoding and manipulating JSON data
+jemalloc                       jemalloc - A general purpose malloc(3) implementation that emphasizes fragmentation avoidance and scalable concurrency support.
+json-c                         json-c - A JSON implementation in C
+kadm-client                    kadm-client - Kerberos administration client library
+kadm-server                    kadm-server - Kerberos administration server library
+kdb                            kdb - Kerberos database access libraries
+krb5-gssapi                    krb5-gssapi - Kerberos implementation of the GSSAPI
+krb5                           krb5 - An implementation of Kerberos network authentication
+ksba                           ksba - X.509 and CMS support library
+lber                           lber (OpenLDAP) - OpenLDAP Lightweight ASN.1 Basic Encoding Rules library
+ldap                           ldap (OpenLDAP) - OpenLDAP Lightweight Directory Access Protocol library
+ldns                           ldns - Library for DNS programming
+libacl                         libacl - A library for POSIX Access Control Lists
+libalpm                        libalpm - Arch Linux package management library
+libarchive                     libarchive - library that can create and read several streaming archive formats
+libargon2                      libargon2 - Development libraries for libargon2
+libassuan                      libassuan - IPC library for the GnuPG components
+libattr                        libattr - A library for filesystem extended attribute support
+libbpf                         libbpf - BPF library
+libbrotlicommon                libbrotlicommon - Brotli common dictionary library
+libbrotlidec                   libbrotlidec - Brotli decoder library
+libbrotlienc                   libbrotlienc - Brotli encoder library
+libcap                         libcap - libcap - linux capabilities library
+libcap-ng                      libcap-ng - An alternate POSIX capabilities library.
+libcrypt                       libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libcrypto                      OpenSSL-libcrypto - OpenSSL cryptography library
+libcryptsetup                  cryptsetup - cryptsetup library
+libcurl                        libcurl - Library to transfer files with ftp, http, etc.
+libdaemon                      libdaemon - a lightweight C library that eases the writing of UNIX daemons
+libdebuginfod                  debuginfod - elfutils library to query debuginfo files from debuginfod servers
+libdw                          libdw - elfutils library for DWARF data and ELF file or process inspection
+libedit                        libedit - command line editor library provides generic line editing, history, and tokenization functions.
+libelf                         libelf - elfutils libelf library to read and write ELF files
+libevent_core                  libevent_core - libevent_core
+libevent_extra                 libevent_extra - libevent_extra
+libevent                       libevent - libevent is an asynchronous notification event loop library
+libevent_openssl               libevent_openssl - libevent_openssl adds openssl-based TLS support to libevent
+libevent_pthreads              libevent_pthreads - libevent_pthreads adds pthreads-based threading support to libevent
+libffi                         libffi - Library supporting Foreign Function Interfaces
+libgcrypt                      libgcrypt - General purpose cryptographic library
+libidn2                        libidn2 - Library implementing IDNA2008 and TR46
+libip4tc                       libip4tc - iptables IPv4 ruleset ADT and kernel interface
+libip6tc                       libip6tc - iptables IPv6 ruleset ADT and kernel interface
+libipq                         libipq - Interface to the (old) ip_queue mechanism
+libiptc                        libiptc - iptables v4/v6 ruleset ADT and kernel interface
+libjq                          libjq - Library to process JSON using a query language
+libkeyutils                    libkeyutils - keyutils library
+libkmod                        libkmod - Library to deal with kernel modules
+liblz4                         lz4 - extremely fast lossless compression algorithm library
+liblzma                        liblzma - General purpose data compression library
+libmagic                       libmagic - Magic number recognition library
+libmakepkg                     libmakepkg - Arch Linux package build utility
+libmaxminddb                   libmaxminddb - C library for the MaxMind DB file format
+libmnl                         libmnl - Minimalistic Netlink communication library
+libndp                         libndp - Neighbour discovery library.
+libnetfilter_conntrack         libnetfilter_conntrack - netfilter userspace conntrack access library
+libnewt                        libnewt - A development library for text mode user interfaces
+libnfnetlink                   libnfnetlink - Low-level netfilter netlink communication library
+libnfsidmap                    libnfsidmap - Library that handles mapping between names and ids for NFSv4.
+libnftables                    libnftables - Netfilter nf_tables user library
+libnftnl                       libnftnl - Netfilter nf_tables infrastructure library
+libnghttp2                     libnghttp2 - HTTP/2 C library
+libnl-3.0                      libnl - Convenience library for netlink sockets
+libnl-cli-3.0                  libnl-cli - Command Line Interface library for netlink sockets
+libnl-genl-3.0                 libnl-genl - Generic Netlink Library
+libnl-idiag-3.0                libnl-idiag - Netlink Inet Diag Family Library
+libnl-nf-3.0                   libnl-nf - Netfilter Netlink Library
+libnl-route-3.0                libnl-route - Netlink Routing Family Library
+libnl-xfrm-3.0                 libnl-xfrm - Netlink Routing Family Library
+libnm                          libnm - Convenience library for clients of NetworkManager
+libnsl                         libnsl - Library containing NIS functions using TI-RPC (IPv6 enabled)
+libparted-fs-resize            libparted-fs-resize - The GNU Parted filesystem resize shared library
+libparted                      libparted - The GNU Parted disk partitioning shared library
+libpcap                        libpcap - Platform-independent network traffic capture library
+libpci                         libpci - libpci
+libpcre16                      libpcre16 - PCRE - Perl compatible regular expressions C library with 16 bit character support
+libpcre2-16                    libpcre2-16 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 16 bit character support
+libpcre2-32                    libpcre2-32 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 32 bit character support
+libpcre2-8                     libpcre2-8 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 8 bit character support
+libpcre2-posix                 libpcre2-posix - Posix compatible interface to libpcre2-8
+libpcre32                      libpcre32 - PCRE - Perl compatible regular expressions C library with 32 bit character support
+libpcrecpp                     libpcrecpp - PCRECPP - C++ wrapper for PCRE
+libpcre                        libpcre - PCRE - Perl compatible regular expressions C library with 8 bit character support
+libpcreposix                   libpcreposix - PCREPosix - Posix compatible interface to libpcre
+libpcsclite                    PCSC Lite - PC/SC smart card interface
+libpipeline                    libpipeline - Pipeline manipulation library
+libpkgconf                     libpkgconf - a library for accessing and manipulating development framework configuration
+libproc2                       libproc2 - Library to control and query process state
+libpsl                         libpsl - Public Suffix List C library.
+libpsx                         libpsx - libpsx - linux posix syscall API for pthreads
+libsasl2                       Cyrus SASL - Cyrus SASL implementation
+libseccomp                     libseccomp - The enhanced seccomp library
+libsecret-1                    libsecret-1 - GObject bindings for Secret Service API
+libsecret-unstable             libsecret-unstable - GObject bindings for Secret Service API (Unstable)
+libsodium                      libsodium - A modern and easy-to-use crypto library
+libssh2                        libssh2 - Library for SSH-based communication
+libssl                         OpenSSL-libssl - Secure Sockets Layer and cryptography libraries
+libsystemd                     systemd - systemd Library
+libtasn1                       libtasn1 - Library for ASN.1 and DER manipulation
+libteamdctl                    libteamdctl - Teamd daemon control library.
+libteam                        libteam - Libteam library.
+libtirpc                       libtirpc - Transport Independent RPC Library
+libudev                        libudev - Library to access udev device information
+liburing-ffi                   liburing - io_uring FFI library
+liburing                       liburing - io_uring library
+libusb-1.0                     libusb-1.0 - C API for USB device access from Linux, Mac OS X, Windows, OpenBSD/NetBSD and Solaris userspace
+libuv                          libuv - multi-platform support library with a focus on asynchronous I/O.
+libverto-libevent              libverto-libevent - Event loop abstraction interface (libevent module)
+libverto                       libverto - Event loop abstraction interface
+libxcrypt                      libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libxml-2.0                     libXML - libXML library version2.
+libzmq                         libzmq - 0MQ c++ library
+libzstd                        zstd - fast lossless compression algorithm library
+lmdb                           liblmdb - Lightning Memory-Mapped Database
+menu                           menuw - ncurses 6.4 add-on library
+menuw                          menuw - ncurses 6.4 add-on library
+mit-krb5-gssapi                mit-krb5-gssapi - Kerberos implementation of the GSSAPI
+mit-krb5                       mit-krb5 - An implementation of Kerberos network authentication
+mm-glib                        mm-glib - Library to control and monitor the ModemManager
+mobile-broadband-provider-info mobile-broadband-provider-info - Mobile Broadband Service Provider Information Database
+ModemManager                   ModemManager - Common headers provided by ModemManager
+mount                          mount - mount library
+mozilla-nspr                   NSPR - The Netscape Portable Runtime
+mozilla-nss                    NSS - Network Security Services
+mpfr                           mpfr - C library for multiple-precision floating-point computations
+ncurses++                      ncurses++w - ncurses 6.4 add-on library
+ncurses                        ncursesw - ncurses 6.4 library
+ncurses++w                     ncurses++w - ncurses 6.4 add-on library
+ncursesw                       ncursesw - ncurses 6.4 library
+nettle                         Nettle - Nettle low-level cryptographic library (symmetric algorithms)
+nspr                           NSPR - The Netscape Portable Runtime
+nss                            NSS - Network Security Services
+numa                           numa - NUMA policy library
+oniguruma                      oniguruma - Regular expression library
+openpgm-5.3                    OpenPGM - PGM Protocol Library.
+openssl                        OpenSSL - Secure Sockets Layer and cryptography libraries and tools
+p11-kit-1                      p11-kit - Library and proxy module for properly loading and sharing PKCS
+pamc                           libpamc - The PAM client API library and binary prompt support. Rarely used.
+pam_misc                       pam_misc - Miscellaneous functions that make the job of writing PAM-aware applications easier.
+pam                            PAM - The primary Linux-PAM library. It is used by PAM modules and PAM-aware applications.
+panel                          panelw - ncurses 6.4 add-on library
+panelw                         panelw - ncurses 6.4 add-on library
+path_utils                     path_utils - Utility functions to manipulate filesystem pathnames
+polkit-agent-1                 polkit-agent-1 - PolicyKit Authentication Agent API
+polkit-gobject-1               polkit-gobject-1 - PolicyKit Authorization API
+popt                           popt - popt library.
+pwquality                      pwquality - Password quality checker
+python-3.11-embed              Python - Embed Python into an application
+python-3.11                    Python - Build a C extension for Python
+python3-embed                  Python - Embed Python into an application
+python3                        Python - Build a C extension for Python
+readline                       Readline - Gnu Readline library for command line editing
+ref_array                      ref_array - A dynamically-growing, reference-counted array
+slang                          slang - S-Lang programming library and interpreter
+smartcols                      smartcols - table or tree library
+sqlite3                        SQLite - SQL database engine
+ss                             ss - Subsystem command parsing library
+sysprof-capture-4              sysprof-capture-4 - The static capture library for tools that generate profiling capture data
+systemd                        systemd - systemd System and Service Manager
+tcl                            Tool Command Language - Tcl is a powerful, easy-to-learn dynamic programming language, suitable for a wide range of uses.
+tic                            ncursesw - ncurses 6.4 library
+tinfo                          ncursesw - ncurses 6.4 library
+tss2-esys                      tss2-esys - TPM2 Enhanced System API library.
+tss2-fapi                      tss2-fapi - TPM2 Feature API library.
+tss2-mu                        tss2-mu - TPM2 type marshaling and unmarshaling library.
+tss2-policy                    tss2-policy - TPM2 policy library.
+tss2-rc                        tss2-rc - TPM2 error decoding library.
+tss2-sys                       tss2-sys - TPM2 System API library.
+tss2-tcti-cmd                  tss2-tcti-cmd - TCTI library for communicating with a subproccess that can communicate with the TPM.
+tss2-tcti-device               tss2-tcti-device - TCTI library for communicating with a TPM device node.
+tss2-tctildr                   tss2-tctildr - Library to simplify management of TCTIs.
+tss2-tcti-libtpms              tss2-tcti-libtpms - TCTI library for communicating with the libtpms library.
+tss2-tcti-mssim                tss2-tcti-mssim - TCTI library for communicating with the Microsoft TPM2 simulator.
+tss2-tcti-pcap                 tss2-tcti-pcap - TCTI library for debugging at the TCTI interface.
+tss2-tcti-spi-helper           tss2-tcti-spi-helper - TCTI library for communicating with the TPM over SPI.
+tss2-tcti-swtpm                tss2-tcti-swtpm - TCTI library for communicating with swtpm.
+udev                           udev - udev
+uuid                           uuid - Universally unique id library
+xtables                        xtables - Shared Xtables code for extensions and iproute2
+yaml-0.1                       LibYAML - Library to parse and emit YAML
+zlib                           zlib - zlib compression library

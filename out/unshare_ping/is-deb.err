@@ -1,2 +1,0 @@
-ping: socktype: SOCK_RAW
-ping: socket: Operation not permitted

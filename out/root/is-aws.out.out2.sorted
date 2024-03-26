@@ -1,0 +1,22 @@
+  
+.  
+..  
+bin -> usr/bin
+boot  
+dev  
+etc  
+home  
+lib64 -> usr/lib64
+lib -> usr/lib
+local  
+media  
+mnt  
+opt  
+proc  
+root  
+run  
+sbin -> usr/sbin
+srv  
+sys  
+tmp  
+usr  

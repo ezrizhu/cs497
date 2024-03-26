@@ -1,0 +1,19 @@
+_=/bin/sh
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus
+HOME=/root
+LANG=en_US.UTF-8
+LOGNAME=root
+MOTD_SHOWN=pam
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PWD=/root
+SHELL=/bin/bash
+SHLVL=0
+SSH_CLIENT=198.8.59.1 53812 22
+SSH_CONNECTION=198.8.59.1 53812 108.61.78.244 22
+SSH_TTY=/dev/pts/0
+TERM=xterm-256color
+USER=root
+XDG_RUNTIME_DIR=/run/user/0
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=1270
+XDG_SESSION_TYPE=tty

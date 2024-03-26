@@ -1,20 +1,23 @@
-bin
-boot
-dev
-etc
-home
-lib
-lost+found
-media
-mnt
-opt
-proc
-root
-run
-sbin
-srv
-swapfile
-sys
-tmp
-usr
-var
+total 2.4G
+drwxr-xr-x  21 root root 4.0K Jan 30 06:25 .
+drwxr-xr-x  21 root root 4.0K Jan 30 06:25 ..
+drwxr-xr-x   2 root root 4.0K Feb  6 02:02 bin
+drwxr-xr-x   4 root root 4.0K Jan 25 12:14 boot
+drwxr-xr-x  15 root root 3.2K Jan 30 06:25 dev
+drwxr-xr-x  44 root root 4.0K Mar 26 03:53 etc
+drwxr-xr-x   3 root root 4.0K Jan 30 06:25 home
+drwxr-xr-x  12 root root 4.0K Jan 25 12:13 lib
+drwx------   2 root root  16K Jan 25 12:13 lost+found
+drwxr-xr-x   5 root root 4.0K Jan 25 12:13 media
+drwxr-xr-x   2 root root 4.0K Jan 25 12:13 mnt
+drwxr-xr-x   3 root root 4.0K Jan 25 12:14 opt
+dr-xr-xr-x 159 root root    0 Jan 30 06:24 proc
+drwx------   5 root root 4.0K Feb 20 09:32 root
+drwxr-xr-x   9 root root  460 Jan 30 06:25 run
+drwxr-xr-x   2 root root  12K Jan 25 12:14 sbin
+drwxr-xr-x   2 root root 4.0K Jan 25 12:13 srv
+-rw-------   1 root root 2.4G Jan 30 06:25 swapfile
+dr-xr-xr-x  13 root root    0 Jan 30 06:24 sys
+drwxrwxrwt   7 root root  160 Mar 26 06:10 tmp
+drwxr-xr-x   9 root root 4.0K Jan 25 12:14 usr
+drwxr-xr-x  12 root root 4.0K Jan 25 12:14 var

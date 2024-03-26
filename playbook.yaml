@@ -1,7 +1,7 @@
 - hosts: all
   vars:
     commands:
-      - cmd: capsh --print
+      - cmd: sudo capsh --print
         output_dir: caps
       - cmd: uname -a
         output_dir: uname
@@ -17,15 +17,15 @@
         output_dir: unshare_ping
       - cmd: ls -lah /sbin/init
         output_dir: init
-      - cmd: ls -lah /sbin/sh
+      - cmd: ls -lah /bin/sh
         output_dir: sh
       - cmd: ls /sys
         output_dir: sysfs
       - cmd: ls /proc
         output_dir: profcs
-      - cmd: ls /
+      - cmd: ls -lah /
         output_dir: root
-      - cmd: cat /etc/sudoers
+      - cmd: sudo cat /etc/sudoers
         output_dir: secure_path
       - cmd: systemctl --version
         output_dir: systemd_ver
