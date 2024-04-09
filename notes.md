@@ -23,9 +23,20 @@ all are systemd, besides alpine, which is busybox
 
 ![](https://not-a.link/A8r8QRu.png)
 
+https://git.kernel.org/pub/scm/libs/libcap/libcap.git
+`man 3 cap_get_proc`
+> To  help  manage  the complexity of the securebits, libcap provides a combined securebit and capability set concept called a libcap mode.  cap_get_mode() attempts to summarize the prevailing security environment in the
+> form of a numerical cap_mode_t value. A text representation of the mode can be obtained via the cap_mode_name() function. The vast majority of combinations of these values are not well defined  in  terms  of  a  libcap
+> mode, and for these states cap_get_mode() returns (cap_mode_t)0 which cap_get_name() identifies as ‘‘UNCERTAIN’’.  Supported modes are: CAP_MODE_NOPRIV, CAP_MODE_PURE1E_INIT and CAP_MODE_PURE1E.
+
+
 ## env
 too messy, not sure what to do rn
 ![](https://not-a.link/3kuoxnV.png)
+
+TODO: Find where they're getting set
+inspect default .profile, etc..
+not done yet
 
 ## pkgconfig
 ```
@@ -34,6 +45,9 @@ for a in *.out; do sort $a > $a.sorted; done
 very different- not sure what to do
 ![](https://not-a.link/6wP7dv7.png)
 
+TODO: Treat as sets
+not done yet
+
 ## procfs
 ```
 for a in *.out; do sort $a > $a.sorted; done
@@ -41,6 +55,9 @@ for a in *.out; do sort $a > $a.sorted; done
 for a in *.sorted; do awk '! /^[0-9]+$/' $a > $a.nonum; done;
 ```
 ![](https://not-a.link/AcV1Gkt.png)
+
+TODO: find out what is caused by a kernel ver or config
+https://man7.org/linux/man-pages/man5/proc.5.html
 
 ## python
 ```
@@ -83,12 +100,43 @@ is-ubuntu.out:lrwxrwxrwx 1 root root 4 Mar 23  2022 /bin/sh -> dash
 ![](https://not-a.link/2XvvNEx.png)
 ![](https://not-a.link/6YX5ZZu.png)
 
+TODO: taxonomize, find out what they are
+https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792
+https://www.freedesktop.org/software/systemd/man/latest/systemd-sysctl.service.html
+
+Ubuntu
+https://git.launchpad.net/ubuntu/+source/procps/tree/debian/sysctl.d?h=applied/2%254.0.4-4ubuntu2&id=b4a4a046cf018a942598e55f3fbc7b5ef474f676
+
+Arch
+https://gitlab.archlinux.org/archlinux/packaging/packages/filesystem/-/blob/main/sysctl?ref_type=heads
+
+Alpine
+https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/alpine-baselayout/APKBUILD
+
+Deb
+Some are here - https://salsa.debian.org/kernel-team/linux/-/tree/master/debian/patches/debian?ref_type=heads
+https://salsa.debian.org/debian/procps/-/blob/master/debian/sysctl.conf?ref_type=heads
+(tho this was never updated for userns_clone)
+
+Fed
+https://src.fedoraproject.org/rpms/systemd/tree/rawhide
+
+Rocky
+https://git.rockylinux.org/original/rpms/rocky-release/-/blob/r9/SOURCES/50-redhat.conf
+
+RHEL
+https://github.com/redhat-plumbers/systemd-rhel8/tree/rhel-8.10.0/sysctl.d
+
+AWS
+
 ## sysfs
 completely same lol
 ![](https://not-a.link/8kpWBga.png)
 
 ## systemdver
 ![](https://not-a.link/roGV3pp.png)
+sysvinit: backwards compat with sysvinit scripts that is usually found in
+/etc/init.d
 
 ```
 is-arch.out:systemd 255 (255.2-3-arch)
