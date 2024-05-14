@@ -1,5 +1,10 @@
 > [!CAUTION]
-> Negative potential consequences of an action.
+> TODO: Make into gitbooks
+
+Include how to generate outputs, what we're using to get the outputs
+scripts to analyze outputs
+Where to look for these special configs in different distos
+and write about how they differ
 
 ## ldd
 ```
@@ -28,6 +33,9 @@ https://git.kernel.org/pub/scm/libs/libcap/libcap.git
 > To  help  manage  the complexity of the securebits, libcap provides a combined securebit and capability set concept called a libcap mode.  cap_get_mode() attempts to summarize the prevailing security environment in the
 > form of a numerical cap_mode_t value. A text representation of the mode can be obtained via the cap_mode_name() function. The vast majority of combinations of these values are not well defined  in  terms  of  a  libcap
 > mode, and for these states cap_get_mode() returns (cap_mode_t)0 which cap_get_name() identifies as ‘‘UNCERTAIN’’.  Supported modes are: CAP_MODE_NOPRIV, CAP_MODE_PURE1E_INIT and CAP_MODE_PURE1E.
+
+
+TODO: Investigate whether libcap version caused the differeces
 
 
 ## env
