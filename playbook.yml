@@ -22,7 +22,7 @@
       - cmd: ls /sys
         output_dir: sysfs
       - cmd: ls /proc
-        output_dir: profcs
+        output_dir: procfs
       - cmd: ls -lah /
         output_dir: root
       - cmd: sudo cat /etc/sudoers

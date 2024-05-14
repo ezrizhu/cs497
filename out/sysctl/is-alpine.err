@@ -1,4 +1,0 @@
-sysctl: error reading key 'net.ipv6.conf.all.stable_secret': I/O error
-sysctl: error reading key 'net.ipv6.conf.default.stable_secret': I/O error
-sysctl: error reading key 'net.ipv6.conf.eth0.stable_secret': I/O error
-sysctl: error reading key 'net.ipv6.conf.lo.stable_secret': I/O error
