@@ -1,0 +1,132 @@
+libb2                          libb2 - C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
+libiptc                        libiptc - iptables v4/v6 ruleset ADT and kernel interface
+libip6tc                       libip6tc - iptables IPv6 ruleset ADT and kernel interface
+gpgme-glib                     gpgme-glib - GnuPG Made Easy to access GnuPG with Glib
+gthread-2.0                    GThread - Thread support for GLib
+formt                          formt - ncurses 6.4 add-on library
+blkid                          blkid - Block device id library
+libprocps                      libprocps - Library to control and query process state
+libseccomp                     libseccomp - The enhanced seccomp library
+libidn2                        libidn2 - Library implementing IDNA2008 and TR46
+smartcols                      smartcols - table or tree library
+gpg-error                      gpg-error - GPG Runtime
+libelf                         libelf - elfutils libelf library to read and write ELF files
+ncursestw                      ncursestw - ncurses 6.4 library
+e2p                            e2p - Ext2fs userspace programs utility library
+einfo                          einfo - Pretty console informational display
+libarchive                     libarchive - library that can create and read several streaming archive formats
+libpng                         libpng - Loads and saves PNG files
+hogweed                        Hogweed - Nettle low-level cryptographic library (public-key algorithms)
+libxcrypt                      libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libpci                         libpci - libpci
+panelt                         panelt - ncurses 6.4 add-on library
+gio-2.0                        GIO - glib I/O library
+libdw                          libdw - elfutils library for DWARF data and ELF file or process inspection
+ncurses                        ncurses - ncurses 6.4 library
+efivar                         efivar - UEFI Variable Management
+mount                          mount - mount library
+libcurl                        libcurl - Library to transfer files with ftp, http, etc.
+nettle                         Nettle - Nettle low-level cryptographic library (symmetric algorithms)
+menut                          menut - ncurses 6.4 add-on library
+ncurses++tw                    ncurses++tw - ncurses 6.4 add-on library
+libcrypt                       libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+efisec                         efisec - UEFI Security Features
+libmagic                       libmagic - Magic number recognition library
+ncursesw                       ncursesw - ncurses 6.4 library
+libacl                         libacl - A library for POSIX Access Control Lists
+mpfr                           mpfr - C library for multiple-precision floating-point computations
+libnghttp2                     libnghttp2 - HTTP/2 C library
+libtirpc                       libtirpc - Transport Independent RPC Library
+python-3.11-embed              Python - Embed Python into an application
+menutw                         menutw - ncurses 6.4 add-on library
+pam                            PAM - The primary Linux-PAM library. It is used by PAM modules and PAM-aware applications.
+ncurses++w                     ncurses++w - ncurses 6.4 add-on library
+tinfo                          tinfo - ncurses 6.4 terminal interface library
+menuw                          menuw - ncurses 6.4 add-on library
+libcrypto                      OpenSSL-libcrypto - OpenSSL cryptography library
+pamc                           libpamc - The PAM client API library and binary prompt support. Rarely used.
+pam_misc                       pam_misc - Miscellaneous functions that make the job of writing PAM-aware applications easier.
+libpkgconf                     libpkgconf - a library for accessing and manipulating development framework configuration
+zlib                           zlib - zlib compression library
+libpcre2-32                    libpcre2-32 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 32 bit character support
+libpsx                         libpsx - libpsx - linux posix syscall API for pthreads
+libpcre2-16                    libpcre2-16 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 16 bit character support
+ext2fs                         ext2fs - Ext2fs library
+libusb-1.0                     libusb-1.0 - C API for USB device access from Linux, Mac OS X, Windows, OpenBSD/NetBSD and Solaris userspace
+libexslt                       libexslt - EXSLT Extension library
+libestr                        libestr - some essentials for string processing
+libpcre2-8                     libpcre2-8 - PCRE2 - Perl compatible regular expressions C library (2nd API) with 8 bit character support
+tinfot                         tinfot - ncurses 6.4 terminal interface library
+popt                           popt - popt library.
+jsoncpp                        jsoncpp - A C++ library for interacting with JSON
+python-3.11                    Python - Build a C extension for Python
+libtasn1                       libtasn1 - Library for ASN.1 and DER manipulation
+com_err                        com_err - Common error description library
+ss                             ss - Subsystem command parsing library
+python-3.12-embed              Python - Embed Python into an application
+libuv                          libuv - multi-platform support library with a focus on asynchronous I/O.
+tinfow                         tinfow - ncurses 6.4 terminal interface library
+libpcre2-posix                 libpcre2-posix - Posix compatible interface to libpcre2-8
+gio-unix-2.0                   GIO unix specific APIs - unix specific headers for glib I/O library
+libcap                         libcap - libcap - linux capabilities library
+formw                          formw - ncurses 6.4 add-on library
+openrc                         OpenRC - Universal init system
+tinfotw                        tinfotw - ncurses 6.4 terminal interface library
+libfastjson                    libfastjson - a fast JSON implementation in C
+openssl                        OpenSSL - Secure Sockets Layer and cryptography libraries and tools
+libxslt                        libxslt - XSLT library version 2.
+xtables                        xtables - Shared Xtables code for extensions and iproute2
+gmodule-no-export-2.0          GModule - Dynamic module loader for GLib
+libassuan                      libassuan - IPC library for the GnuPG components
+libattr                        libattr - A library for filesystem extended attribute support
+tcl                            Tool Command Language - Tcl is a powerful, easy-to-learn dynamic programming language, suitable for a wide range of uses.
+fdisk                          fdisk - fdisk library
+python-3.12                    Python - Build a C extension for Python
+uuid                           uuid - Universally unique id library
+expatw                         expat - expat XML parser
+gmp                            GNU MP - GNU Multiple Precision Arithmetic Library
+ncurses++                      ncurses++ - ncurses 6.4 add-on library
+panelw                         panelw - ncurses 6.4 add-on library
+sqlite3                        SQLite - SQL database engine
+libssl                         OpenSSL-libssl - Secure Sockets Layer and cryptography libraries
+libdaemon                      libdaemon - a lightweight C library that eases the writing of UNIX daemons
+libpipeline                    libpipeline - Pipeline manipulation library
+lzo2                           lzo2 - LZO - a real-time data compression library
+libkmod                        libkmod - Library to deal with kernel modules
+gmodule-2.0                    GModule - Dynamic module loader for GLib
+libip4tc                       libip4tc - iptables IPv4 ruleset ADT and kernel interface
+expat                          expat - expat XML parser
+ncursest                       ncursest - ncurses 6.4 library
+panel                          panel - ncurses 6.4 add-on library
+gmodule-export-2.0             GModule - Dynamic module loader for GLib
+libnsl                         libnsl - Library containing NIS functions using TI-RPC (IPv6 enabled)
+efiboot                        efiboot - UEFI Boot variable support
+ncurses++t                     ncurses++t - ncurses 6.4 add-on library
+libgcrypt                      libgcrypt - General purpose cryptographic library
+freetype2                      FreeType 2 - A free, high-quality, and portable font engine.
+gnutls                         GnuTLS - Transport Security Layer implementation for the GNU system
+libxml-2.0                     libXML - libXML library version2.
+paneltw                        paneltw - ncurses 6.4 add-on library
+liblzma                        liblzma - General purpose data compression library
+ksba                           ksba - X.509 and CMS support library
+glib-2.0                       GLib - C Utility Library
+gpgme                          gpgme - GnuPG Made Easy to access GnuPG
+libpng16                       libpng - Loads and saves PNG files
+libudev                        libudev - Library to access udev device information
+libffi                         libffi - Library supporting Foreign Function Interfaces
+libmnl                         libmnl - Minimalistic Netlink communication library
+libcares                       c-ares - asynchronous DNS lookup library
+gobject-2.0                    GObject - GLib Type, Object, Parameter and Signal Library
+readline                       Readline - Gnu Readline library for command line editing
+menu                           menu - ncurses 6.4 add-on library
+formtw                         formtw - ncurses 6.4 add-on library
+libzstd                        libzstd - fast lossless compression algorithm library
+form                           form - ncurses 6.4 add-on library
+librhash                       librash - LibRHash shared library
+gmpxx                          GNU MP C++ - GNU Multiple Precision Arithmetic Library (C++ bindings)
+passwdqc                       passwdqc - Password/passphrase strength checking and policy enforcement
+libsodium                      libsodium - A modern and easy-to-use crypto library
+dracut                         dracut - dracut
+hwdata                         hwdata - Hardware identification and configuration data
+shared-mime-info               shared-mime-info - Freedesktop common MIME database
+udev                           udev - udev

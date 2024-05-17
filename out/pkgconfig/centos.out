@@ -1,0 +1,17 @@
+systemd          systemd - systemd System and Service Manager
+formw            formw - ncurses 5.9 add-on library
+menuw            menuw - ncurses 5.9 add-on library
+menu             menu - ncurses 5.9 add-on library
+ncurses++        ncurses++ - ncurses 5.9 add-on library
+panelw           panelw - ncurses 5.9 add-on library
+panel            panel - ncurses 5.9 add-on library
+ncurses          ncurses - ncurses 5.9 library
+dracut           dracut - dracut
+tic              tic - ncurses 5.9 add-on library
+tinfo            tinfo - ncurses 5.9 terminal interface library
+bash-completion  bash-completion - programmable completion for the bash shell
+form             form - ncurses 5.9 add-on library
+ncurses++w       ncurses++w - ncurses 5.9 add-on library
+ncursesw         ncursesw - ncurses 5.9 library
+udev             udev - udev
+shared-mime-info shared-mime-info - Freedesktop common MIME database

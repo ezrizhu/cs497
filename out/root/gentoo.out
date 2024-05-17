@@ -1,0 +1,23 @@
+total 81K
+drwxr-xr-x  22 root root    4.0K Jan  5 21:04 .
+drwxr-xr-x  22 root root    4.0K Jan  5 21:04 ..
+drwxr-xr-x   2 root root    4.0K Jan  5 20:52 bin
+drwxr-xr-x   5 root root    1.0K Jan  5 21:05 boot
+drwxr-xr-x  19 root root    4.1K May 17 00:20 dev
+drwxrwxr-x   2 root portage 4.0K Jan  5 20:57 distfiles
+drwxr-xr-x  38 root root    4.0K May 17 00:21 etc
+drwxr-xr-x   3 root root    4.0K Jan  5 19:07 home
+drwxr-xr-x  11 root root    4.0K Jan  5 18:57 lib
+drwxr-xr-x   6 root root    4.0K Jan  5 20:47 lib64
+drwx------   2 root root     16K Jan  5 18:21 lost+found
+drwxr-xr-x   2 root root    4.0K Dec 31 21:02 media
+drwxr-xr-x   2 root root    4.0K Dec 31 21:02 mnt
+drwxr-xr-x   2 root root    4.0K Dec 31 21:02 opt
+dr-xr-xr-x 151 root root       0 May 17 00:20 proc
+drwx------   2 root root    4.0K Dec 31 21:02 root
+drwxr-xr-x  12 root root     440 May 17 00:20 run
+drwxr-xr-x   2 root root    4.0K Jan  5 20:52 sbin
+dr-xr-xr-x  13 root root       0 May 17 00:20 sys
+drwxrwxrwt   9 root root    4.0K May 17 00:21 tmp
+drwxr-xr-x  13 root root    4.0K Jan  5 19:08 usr
+drwxr-xr-x   9 root root    4.0K Jan  5 20:08 var

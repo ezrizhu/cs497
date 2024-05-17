@@ -1,0 +1,19 @@
+USER=vagrant
+SSH_CLIENT=192.168.121.1 55076 22
+XDG_SESSION_TYPE=tty
+SHLVL=0
+MOTD_SHOWN=pam
+HOME=/home/vagrant
+SSH_TTY=/dev/pts/0
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LOGNAME=vagrant
+_=/bin/sh
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+XDG_SESSION_ID=6
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/games
+XDG_RUNTIME_DIR=/run/user/1000
+LANG=en_US.UTF-8
+SHELL=/bin/bash
+PWD=/home/vagrant
+SSH_CONNECTION=192.168.121.1 55076 192.168.121.12 22

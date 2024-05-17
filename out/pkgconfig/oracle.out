@@ -1,0 +1,5 @@
+udev             udev - udev
+dracut           dracut - dracut
+systemd          systemd - systemd System and Service Manager
+shared-mime-info shared-mime-info - Freedesktop common MIME database
+bash-completion  bash-completion - programmable completion for the bash shell

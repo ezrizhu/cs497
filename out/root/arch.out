@@ -1,0 +1,23 @@
+total 56K
+drwxr-xr-x   1 root root  136 May  1 12:05 .
+drwxr-xr-x   1 root root  136 May  1 12:05 ..
+lrwxrwxrwx   1 root root    7 Apr  7 18:02 bin -> usr/bin
+drwxr-xr-x   1 root root  128 May  1 12:05 boot
+drwxr-xr-x  18 root root 3.6K May 17 00:20 dev
+drwx------   3 root root 4.0K Jan  1  1970 efi
+drwxr-xr-x   1 root root 1.8K May 17 00:22 etc
+drwxr-xr-x   1 root root   14 May  1 12:06 home
+lrwxrwxrwx   1 root root    7 Apr  7 18:02 lib -> usr/lib
+lrwxrwxrwx   1 root root    7 Apr  7 18:02 lib64 -> usr/lib
+drwxr-xr-x   1 root root    0 Apr  7 18:02 mnt
+drwxr-xr-x   1 root root    0 Apr  7 18:02 opt
+dr-xr-xr-x 198 root root    0 May 17 00:20 proc
+drwxr-x---   1 root root   20 May  1 12:04 root
+drwxr-xr-x  17 root root  460 May 17 00:21 run
+lrwxrwxrwx   1 root root    7 Apr  7 18:02 sbin -> usr/bin
+drwxr-xr-x   1 root root   14 May  1 12:04 srv
+drwx------   1 root root   16 May  1 12:05 swap
+dr-xr-xr-x  13 root root    0 May 17 00:20 sys
+drwxrwxrwt  11 root root  240 May 17 00:22 tmp
+drwxr-xr-x   1 root root   70 May 17 00:22 usr
+drwxr-xr-x   1 root root  116 May 17 00:20 var

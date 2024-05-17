@@ -1,0 +1,98 @@
+- hosts: all
+  vars:
+    commands:
+      - cmd: uname -a
+        output_dir: uname
+      - cmd: ldd --version
+        output_dir: ldd
+      - cmd: whereis python
+        output_dir: py_where
+      - cmd: python --version
+        output_dir: py_where
+      - cmd: sudo sysctl kernel.unprivileged_userns_clone
+        output_dir: userns_clone
+      - cmd: unshare --map-root-user ping -c1 1.1
+        output_dir: unshare_ping
+      - cmd: ls -lah /sbin/init
+        output_dir: init
+      - cmd: ls -lah /bin/sh
+        output_dir: sh
+      - cmd: ls /sys
+        output_dir: sysfs
+      - cmd: ls /proc
+        output_dir: procfs
+      - cmd: ls -lah /
+        output_dir: root
+      - cmd: ls /dev
+        output_dir: devfs
+      - cmd: sudo cat /etc/sudoers
+        output_dir: secure_path
+      - cmd: systemctl --version
+        output_dir: systemd_ver
+      - cmd: env
+        output_dir: env
+      - cmd: pkg-config --list-all
+        output_dir: pkgconfig
+      - cmd: sudo sysctl -a
+        output_dir: sysctl
+      - cmd: echo \$SHELL
+        output_dir: default_shell
+      - cmd: cat /etc/profile
+        output_dir: etc_profile
+      - cmd: ls /etc/profile.d
+        output_dir: etc_profile_d
+      - cmd: cat ~/.bash_profile
+        output_dir: bash_profile
+      - cmd: cat ~/.bash_login
+        output_dir: bash_login
+      - cmd: cat ~/.profile
+        output_dir: dot_profile
+      - cmd: cat ~/.bashrc
+        output_dir: bashrc
+
+  tasks:
+    - local_action:
+        module: file
+        path: "out/{{ item.output_dir }}"
+        state: directory
+      loop: "{{ commands }}"
+
+    - name: Run commands and save output
+      command: "{{ item.cmd }}"
+      register: output
+      ignore_errors: true
+      loop: "{{ commands }}"
+      loop_control:
+        extended: yes 
+
+    - local_action:
+        module: copy
+        content: "{{ item.stdout }}"
+        dest: "out/{{ item.item.output_dir }}/{{ inventory_hostname }}.out"
+      loop: "{{ output.results }}"
+      loop_control:
+        label: "{{ item.item.cmd }}"
+    - local_action:
+        module: copy
+        content: "{{ item.stderr }}"
+        dest: "out/{{ item.item.output_dir }}/{{ inventory_hostname }}.err"
+      loop: "{{ output.results }}"
+      loop_control:
+        label: "{{ item.item.cmd }}"
+
+    - local_action:
+        module: file
+        path: "out/kernel_config"
+        state: directory
+    - name: Get kernel configuration
+      ansible.builtin.shell: cat /boot/config-$(uname -r)
+      ignore_errors: true
+      register: kernel_config
+    - local_action:
+        module: copy
+        content: "{{ kernel_config.stdout }}"
+        dest: "out/kernel_config/{{ inventory_hostname }}.out"
+    - local_action:
+        module: copy
+        content: "{{ kernel_config.stderr }}"
+        dest: "out/kernel_config/{{ inventory_hostname }}.err"

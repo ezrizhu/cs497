@@ -1,0 +1,23 @@
+total 24K
+dr-xr-xr-x.  18 root root  235 Jan  5 17:11 .
+dr-xr-xr-x.  18 root root  235 Jan  5 17:11 ..
+dr-xr-xr-x.   2 root root    6 Jan 19  2023 afs
+lrwxrwxrwx.   1 root root    7 Jan 19  2023 bin -> usr/bin
+dr-xr-xr-x.   5 root root 4.0K Jan  5 17:11 boot
+drwxr-xr-x.  19 root root 3.7K May 17 00:20 dev
+drwxr-xr-x.  83 root root 8.0K May 17 00:21 etc
+drwxr-xr-x.   3 root root   21 Jan  5 16:43 home
+lrwxrwxrwx.   1 root root    7 Jan 19  2023 lib -> usr/lib
+lrwxrwxrwx.   1 root root    9 Jan 19  2023 lib64 -> usr/lib64
+drwxr-xr-x.   2 root root    6 Jan 19  2023 media
+drwxr-xr-x.   2 root root    6 Jan 19  2023 mnt
+drwxr-xr-x.   2 root root    6 Jan 19  2023 opt
+dr-xr-xr-x. 187 root root    0 May 17 00:20 proc
+dr-xr-x---.   3 root root  142 Jan  5 17:10 root
+drwxr-xr-x.  30 root root  800 May 17 00:20 run
+lrwxrwxrwx.   1 root root    8 Jan 19  2023 sbin -> usr/sbin
+drwxr-xr-x.   2 root root    6 Jan 19  2023 srv
+dr-xr-xr-x.  13 root root    0 May 17 00:20 sys
+drwxrwxrwt.  14 root root 4.0K May 17 00:21 tmp
+drwxr-xr-x.  12 root root  144 Jan  5 16:30 usr
+drwxr-xr-x.  18 root root 4.0K Jan  6 00:45 var

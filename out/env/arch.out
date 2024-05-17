@@ -1,0 +1,20 @@
+SHELL=/usr/bin/bash
+PWD=/home/vagrant
+LOGNAME=vagrant
+XDG_SESSION_TYPE=tty
+_=/usr/bin/python3.12
+MOTD_SHOWN=pam
+HOME=/home/vagrant
+SSH_CONNECTION=192.168.121.1 58088 192.168.121.140 22
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+USER=vagrant
+SHLVL=1
+XDG_SESSION_ID=4
+XDG_RUNTIME_DIR=/run/user/1000
+SSH_CLIENT=192.168.121.1 58088 22
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+MAIL=/var/spool/mail/vagrant
+SSH_TTY=/dev/pts/0
+LC_CTYPE=C.UTF-8
