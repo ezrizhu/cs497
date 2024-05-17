@@ -16,3 +16,21 @@ rhel.out: Linux rhel9.localdomain 5.14.0-362.8.1.el9_3.x86_64 #1 SMP PREEMPT_DYN
 rocky.out: Linux rocky9.localdomain 5.14.0-362.13.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Dec 13 14:07:45 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ubuntu.out: Linux ubuntu2204.localdomain 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 ```
+
+RHEL (Red Hat Enterprise Linux) is one of the most popular Linux distribution
+developed by Red Hat. CentOS was one of the most common, free Linux distro until
+it was discontinued by Red Hat. Rocky Linux emerged to become it's community
+maintained successor. Fedora is also a community maintained desktop orientated
+rhel derivative. Oracle and Alma linux are both also rhel derivatives.
+
+Debian is another one of the most popular Linux distributions, it is community
+maintained, with Ubuntu being one of the very popular corporate supported
+derivative. 
+
+Alpine Linux is another community maintained Linux distribution that is focused
+on simplicity. It uses a busybox instead of coreutils, and musl libc instead of
+glibc. It is very popular in container runtimes as it is very light weight.
+
+Lastly, Arch and Gentoo are both power user focused Linux distributions that
+offers an incredible amount of user customization. They are both quite different
+as well.
