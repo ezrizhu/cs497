@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1735.20666598" height="1101.3330580000002" font-family="Consolas, Menlo, 'Bitstream Vera Sans Mono', monospace, 'Powerline Symbols'" font-size="14px">
+  <style>
+    .br { font-weight: bold }
+    .fa { fill-opacity: 0.5 }
+    .it { font-style: italic }
+    .un { text-decoration: underline }
+  </style>
+
+  <rect width="100%" height="100%" style="fill: #121314" rx="4" ry="4"></rect>
+
+  <svg x="8.42333333" y="9.333331000000001" class="default-text-fill">
+    <g style="shape-rendering: optimizeSpeed">
+
+        <rect x="0.0" y="1063.999734" width="8.42333333" height="18.666662000000002" style="fill: #d9d9d9"></rect>
+
+
+    </g>
+
+    <text style="fill: #cccccc">
+      <tspan y="0.0">
+        <tspan dy="1em" x="0.0" class="br">
+==&gt; alpine: Running provisioner: shell...
+        </tspan>
+      </tspan><tspan y="18.666662000000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;whereis python&#39;, &#39;output_dir&#39;: &#39;py_where&#39;})
+        </tspan>
+      </tspan><tspan y="37.333324000000005">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /proc&#39;, &#39;output_dir&#39;: &#39;procfs&#39;})
+        </tspan>
+      </tspan><tspan y="55.99998600000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;sudo sysctl kernel.unprivileged_userns_clone&#39;, &#39;output_dir&#39;: &#39;userns_clone&#39;})
+        </tspan>
+      </tspan><tspan y="74.66664800000001">
+        <tspan dy="1em" x="33.69333332">
+fedora: Running ansible-playbook...
+        </tspan>
+      </tspan><tspan y="93.33331000000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;python --version&#39;, &#39;output_dir&#39;: &#39;py_where&#39;})
+        </tspan>
+      </tspan><tspan y="111.99997200000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /&#39;, &#39;output_dir&#39;: &#39;root&#39;})
+        </tspan>
+      </tspan><tspan y="130.66663400000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;unshare --map-root-user ping -c1 1.1&#39;, &#39;output_dir&#39;: &#39;unshare_ping&#39;})
+        </tspan>
+      </tspan><tspan y="149.33329600000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;sudo sysctl kernel.unprivileged_userns_clone&#39;, &#39;output_dir&#39;: &#39;userns_clone&#39;})
+        </tspan>
+      </tspan><tspan y="167.99995800000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /sbin/init&#39;, &#39;output_dir&#39;: &#39;init&#39;})
+        </tspan>
+      </tspan><tspan y="186.66662000000002">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /dev&#39;, &#39;output_dir&#39;: &#39;devfs&#39;})
+        </tspan>
+      </tspan><tspan y="205.33328200000003">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;unshare --map-root-user ping -c1 1.1&#39;, &#39;output_dir&#39;: &#39;unshare_ping&#39;})
+        </tspan>
+      </tspan><tspan y="223.99994400000003">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Hit:1 https://mirrors.edge.kernel.org/ubuntu jammy InRelease
+        </tspan>
+      </tspan><tspan y="242.66660600000003">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;sudo cat /etc/sudoers&#39;, &#39;output_dir&#39;: &#39;secure_path&#39;})
+        </tspan>
+      </tspan><tspan y="261.33326800000003">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:2 https://mirrors.edge.kernel.org/ubuntu jammy-updates InRelease [119 kB]
+        </tspan>
+      </tspan><tspan y="279.99993">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /bin/sh&#39;, &#39;output_dir&#39;: &#39;sh&#39;})
+        </tspan>
+      </tspan><tspan y="298.66659200000004">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:3 https://mirrors.edge.kernel.org/ubuntu jammy-backports InRelease [109 kB]
+        </tspan>
+      </tspan><tspan y="317.333254">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:4 https://mirrors.edge.kernel.org/ubuntu jammy-security InRelease [110 kB]
+        </tspan>
+      </tspan><tspan y="335.99991600000004">
+        <tspan dy="1em" x="33.69333332">
+gentoo: Key inserted! Disconnecting and reconnecting using new SSH key...
+        </tspan>
+      </tspan><tspan y="373.33324000000005">
+        <tspan dy="1em" x="0.0">
+PLAY [all] *********************************************************************
+        </tspan>
+      </tspan><tspan y="410.66656400000005">
+        <tspan dy="1em" x="0.0">
+TASK [Gathering Facts] *********************************************************
+        </tspan>
+      </tspan><tspan y="429.333226">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;systemctl --version&#39;, &#39;output_dir&#39;: &#39;systemd_ver&#39;})
+        </tspan>
+      </tspan><tspan y="447.99988800000006">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /sbin/init&#39;, &#39;output_dir&#39;: &#39;init&#39;})
+        </tspan>
+      </tspan><tspan y="466.66655000000003">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /sys&#39;, &#39;output_dir&#39;: &#39;sysfs&#39;})
+        </tspan>
+      </tspan><tspan y="485.33321200000006">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:5 https://mirrors.edge.kernel.org/ubuntu jammy-updates/main amd64 Packages [1,678 kB]
+        </tspan>
+      </tspan><tspan y="503.99987400000003">
+        <tspan dy="1em" x="33.69333332">
+alpine: Running: inline script
+        </tspan>
+      </tspan><tspan y="522.6665360000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:6 https://mirrors.edge.kernel.org/ubuntu jammy-updates/main Translation-en [311 kB]
+        </tspan>
+      </tspan><tspan y="541.333198">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /bin/sh&#39;, &#39;output_dir&#39;: &#39;sh&#39;})
+        </tspan>
+      </tspan><tspan y="559.99986">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:7 https://mirrors.edge.kernel.org/ubuntu jammy-updates/restricted amd64 Packages [1,923 kB]
+        </tspan>
+      </tspan><tspan y="578.6665220000001">
+        <tspan dy="1em" x="0.0" class="br">
+==&gt; debian: Machine booted and ready!
+        </tspan>
+      </tspan><tspan y="597.3331840000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /proc&#39;, &#39;output_dir&#39;: &#39;procfs&#39;})
+        </tspan>
+      </tspan><tspan y="615.999846">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;env&#39;, &#39;output_dir&#39;: &#39;env&#39;})
+        </tspan>
+      </tspan><tspan y="634.666508">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:8 https://mirrors.edge.kernel.org/ubuntu jammy-updates/restricted Translation-en [327 kB]
+        </tspan>
+      </tspan><tspan y="653.33317">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:9 https://mirrors.edge.kernel.org/ubuntu jammy-updates/universe amd64 Packages [1,074 kB]
+        </tspan>
+      </tspan><tspan y="671.9998320000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:10 https://mirrors.edge.kernel.org/ubuntu jammy-updates/universe Translation-en [246 kB]
+        </tspan>
+      </tspan><tspan y="690.6664940000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:11 https://mirrors.edge.kernel.org/ubuntu jammy-updates/multiverse amd64 Packages [42.7 kB]
+        </tspan>
+      </tspan><tspan y="709.333156">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:12 https://mirrors.edge.kernel.org/ubuntu jammy-updates/multiverse Translation-en [10.4 kB]
+        </tspan>
+      </tspan><tspan y="727.999818">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:13 https://mirrors.edge.kernel.org/ubuntu jammy-backports/main amd64 Packages [67.1 kB]
+        </tspan>
+      </tspan><tspan y="746.6664800000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /sys&#39;, &#39;output_dir&#39;: &#39;sysfs&#39;})
+        </tspan>
+      </tspan><tspan y="765.3331420000001">
+        <tspan dy="1em" x="0.0" class="br">
+==&gt; oracle: Machine booted and ready!
+        </tspan>
+      </tspan><tspan y="783.999804">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:14 https://mirrors.edge.kernel.org/ubuntu jammy-backports/main Translation-en [11.0 kB]
+        </tspan>
+      </tspan><tspan y="802.666466">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:15 https://mirrors.edge.kernel.org/ubuntu jammy-backports/universe amd64 Packages [27.2 kB]
+        </tspan>
+      </tspan><tspan y="821.3331280000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+alpine: fetch https://mirrors.edge.kernel.org/alpine/v3.18/main/x86_64/APKINDEX.tar.gz
+        </tspan>
+      </tspan><tspan y="839.9997900000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:16 https://mirrors.edge.kernel.org/ubuntu jammy-backports/universe Translation-en [16.2 kB]
+        </tspan>
+      </tspan><tspan y="858.666452">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [alma -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls -lah /&#39;, &#39;output_dir&#39;: &#39;root&#39;})
+        </tspan>
+      </tspan><tspan y="877.333114">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [centos -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;pkg-config --list-all&#39;, &#39;output_dir&#39;: &#39;pkgconfig&#39;})
+        </tspan>
+      </tspan><tspan y="895.9997760000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:17 https://mirrors.edge.kernel.org/ubuntu jammy-security/main amd64 Packages [1,467 kB]
+        </tspan>
+      </tspan><tspan y="914.6664380000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+alpine: fetch https://mirrors.edge.kernel.org/alpine/v3.18/community/x86_64/APKINDEX.tar.gz
+        </tspan>
+      </tspan><tspan y="933.3331000000001">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rhel]
+        </tspan>
+      </tspan><tspan y="951.999762">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:18 https://mirrors.edge.kernel.org/ubuntu jammy-security/main Translation-en [252 kB]
+        </tspan>
+      </tspan><tspan y="989.3330860000001">
+        <tspan dy="1em" x="0.0">
+TASK [file] ********************************************************************
+        </tspan>
+      </tspan><tspan y="1007.9997480000001">
+        <tspan dy="1em" x="33.69333332" style="fill: #4ebf22">
+ubuntu: Get:19 https://mirrors.edge.kernel.org/ubuntu jammy-security/restricted amd64 Packages [1,866 kB]
+        </tspan>
+      </tspan><tspan y="1026.66641">
+        <tspan dy="1em" x="0.0" style="fill: #4ebf22">
+ok: [rocky -&gt; localhost] =&gt; (item={&#39;cmd&#39;: &#39;ls /proc&#39;, &#39;output_dir&#39;: &#39;procfs&#39;})
+        </tspan>
+      </tspan><tspan y="1045.3330720000001">
+        <tspan dy="1em" x="33.69333332">
+arch: Warning: Connection refused. Retrying...
+        </tspan>
+      </tspan>
+    </text>
+  </svg>
+
+  <g transform="translate(-50 -50)">
+    <svg x="50%" y="50%" width="100" height="100">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 866.0254037844387 866.0254037844387" style="filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4))">
+  <defs>
+    <mask id="small-triangle-mask">
+      <rect width="100%" height="100%" fill="white"></rect>
+      <polygon points="508.01270189221935 433.01270189221935, 208.0127018922194 259.8076211353316, 208.01270189221927 606.217782649107" fill="black">
+      </polygon>
+    </mask>
+  </defs>
+  <polygon points="808.0127018922194 433.01270189221935, 58.01270189221947 -1.1368683772161603e-13, 58.01270189221913 866.0254037844386" mask="url(#small-triangle-mask)" fill="white">
+  </polygon>
+  <polyline points="481.2177826491071 333.0127018922194, 134.80762113533166 533.0127018922194" stroke="white" stroke-width="90">
+  </polyline>
+</svg>
+    </svg>
+  </g>
+</svg>
