@@ -1,0 +1,24 @@
+bash-completion                bash-completion - programmable completion for the bash shell
+dracut                         dracut - dracut
+form                           form - ncurses 6.2 add-on library
+formw                          formw - ncurses 6.2 add-on library
+libcrypt                       libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libcrypto                      OpenSSL-libcrypto - OpenSSL cryptography library
+libelf                         libelf - elfutils libelf library to read and write ELF files
+libssl                         OpenSSL-libssl - Secure Sockets Layer and cryptography libraries
+libxcrypt                      libxcrypt - Extended crypt library for DES, MD5, Blowfish and others
+libzstd                        zstd - fast lossless compression algorithm library
+menu                           menu - ncurses 6.2 add-on library
+menuw                          menuw - ncurses 6.2 add-on library
+ncurses++                      ncurses++ - ncurses 6.2 add-on library
+ncurses                        ncurses - ncurses 6.2 library
+ncurses++w                     ncurses++w - ncurses 6.2 add-on library
+ncursesw                       ncursesw - ncurses 6.2 library
+openssl                        OpenSSL - Secure Sockets Layer and cryptography libraries and tools
+panel                          panel - ncurses 6.2 add-on library
+panelw                         panelw - ncurses 6.2 add-on library
+systemd                        systemd - systemd System and Service Manager
+tic                            tic - ncurses 6.2 add-on library
+tinfo                          tinfo - ncurses 6.2 terminal interface library
+udev                           udev - udev
+zlib                           zlib - zlib compression library

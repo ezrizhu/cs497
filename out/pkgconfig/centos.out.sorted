@@ -1,0 +1,17 @@
+bash-completion  bash-completion - programmable completion for the bash shell
+dracut           dracut - dracut
+form             form - ncurses 5.9 add-on library
+formw            formw - ncurses 5.9 add-on library
+menu             menu - ncurses 5.9 add-on library
+menuw            menuw - ncurses 5.9 add-on library
+ncurses++        ncurses++ - ncurses 5.9 add-on library
+ncurses          ncurses - ncurses 5.9 library
+ncurses++w       ncurses++w - ncurses 5.9 add-on library
+ncursesw         ncursesw - ncurses 5.9 library
+panel            panel - ncurses 5.9 add-on library
+panelw           panelw - ncurses 5.9 add-on library
+shared-mime-info shared-mime-info - Freedesktop common MIME database
+systemd          systemd - systemd System and Service Manager
+tic              tic - ncurses 5.9 add-on library
+tinfo            tinfo - ncurses 5.9 terminal interface library
+udev             udev - udev

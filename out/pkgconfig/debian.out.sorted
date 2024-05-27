@@ -1,0 +1,11 @@
+bash-completion                bash-completion - programmable completion for the bash shell
+iso-codes                      iso-codes - ISO country, language, script and currency codes and translations
+libevent_core                  libevent_core - libevent_core
+libevent_extra                 libevent_extra - libevent_extra
+libevent                       libevent - libevent is an asynchronous notification event loop library
+libevent_openssl               libevent_openssl - libevent_openssl adds openssl-based TLS support to libevent
+libevent_pthreads              libevent_pthreads - libevent_pthreads adds pthreads-based threading support to libevent
+shared-mime-info               shared-mime-info - Freedesktop common MIME database
+systemd                        systemd - systemd System and Service Manager
+udev                           udev - udev
+xkeyboard-config               XKeyboardConfig - X Keyboard configuration data
