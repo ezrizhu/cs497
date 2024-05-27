@@ -287,52 +287,39 @@ application in a alpine docker container, it may need to be compiled
 to musl libc.
 
 There may also be other small tweaks that the upstream makes to glibc.
-i.e., `Debain Glibc Patches
+i.e., `Debain glibc patches
 <https://salsa.debian.org/glibc-team/glibc/-/tree/sid/debian/patches>`_
+`Gentoo glibc patchset
+<https://github.com/gentoo/glibc-patches/tree/master>`_
 
-::
+``./tests/ldd.sh``
 
-    λ ./tests/ldd.sh
-    alma.out -> ldd (GNU libc) 2.34
-    alpine.err -> musl libc (x86_64)
-    arch.out -> ldd (GNU libc) 2.39
-    centos.out -> ldd (GNU libc) 2.17
-    debian.out -> ldd (Debian GLIBC 2.36-9+deb12u3) 2.36
-    fedora.out -> ldd (GNU libc) 2.37
-    gentoo.out -> ldd (Gentoo 2.37-r7 (patchset 10)) 2.37
-    oracle.out -> ldd (GNU libc) 2.17
-    rhel.out -> ldd (GNU libc) 2.34
-    rocky.out -> ldd (GNU libc) 2.34
-    ubuntu.out -> ldd (Ubuntu GLIBC 2.35-0ubuntu3.5) 2.35
++--------+--------------+---------+-----------------------+
+| Distro | Vendor       | Version | Extra                 |
++========+==============+=========+=======================+
+| RHEL   | GNU libc     | 2.34    |                       |
++--------+--------------+---------+-----------------------+
+| CentOS | GNU libc     | 2.17    |                       |
++--------+--------------+---------+-----------------------+
+| Rocky  | GNU libc     | 2.34    |                       |
++--------+--------------+---------+-----------------------+
+| Fedora | GNU libc     | 2.37    |                       |
++--------+--------------+---------+-----------------------+
+| Alma   | GNU libc     | 2.24    |                       |
++--------+--------------+---------+-----------------------+
+| Oracle | GNU libc     | 2.17    |                       |
++--------+--------------+---------+-----------------------+
+| Debian | Debian libc  | 2.36    | 2.36-9+deb12u3        |
++--------+--------------+---------+-----------------------+
+| Ubuntu | Ubuntu GLIBC | 2.35    | 2.35-0ubuntu3.5       |
++--------+--------------+---------+-----------------------+
+| Alpine | musl         | 1.2.4   |                       |
++--------+--------------+---------+-----------------------+
+| Arch   | GNU libc     | 2.39    |                       |
++--------+--------------+---------+-----------------------+
+| Gentoo | Gentoo glibc | 2.37    | 2.37-r7 (patchset 10) |
++--------+--------------+---------+-----------------------+
 
-+---------+----------------------------+------------+
-| Distro  | LDD Vendor                 | LDD        |
-|         |                            | Version    |
-+=========+============================+============+
-| alma    | GNU libc                   | 2.34       |
-+---------+----------------------------+------------+
-| alpine  | musl libc (x86_64)         | ???        |
-+---------+----------------------------+------------+
-| arch    | GNU libc                   | 2.39       |
-+---------+----------------------------+------------+
-| centos  | GNU libc                   | 2.17       |
-+---------+----------------------------+------------+
-| debian  | Debian GLIBC 2.36-9+deb12u3| 2.36       |
-+---------+----------------------------+------------+
-| fedora  | GNU libc                   | 2.37       |
-+---------+----------------------------+------------+
-| gentoo  | Gentoo 2.37-r7 (patchset   | 2.37       |
-|         | 10)                        |            |
-+---------+----------------------------+------------+
-| oracle  | GNU libc                   | 2.17       |
-+---------+----------------------------+------------+
-| rhel    | GNU libc                   | 2.34       |
-+---------+----------------------------+------------+
-| rocky   | GNU libc                   | 2.34       |
-+---------+----------------------------+------------+
-| ubuntu  | Ubuntu GLIBC               | 2.35       |
-|         | 2.35-0ubuntu3.5            |            |
-+---------+----------------------------+------------+
 
 init
 ====
@@ -341,20 +328,34 @@ Systemd is a very common init system, however, for alpine, gentoo, and some
 other obscure distros, you may need to supply another form of service file. Such
 as a less declarative format i.e., a script.
 
-::
+``./tests/init.sh``
 
-    λ ./tests/init.sh
-    alma.out -> systemd
-    alpine.out -> busybox
-    arch.out -> systemd
-    centos.out -> systemd
-    debian.out -> systemd
-    fedora.out -> systemd
-    gentoo.out -> init
-    oracle.out -> systemd
-    rhel.out -> systemd
-    rocky.out -> systemd
-    ubuntu.out -> systemd
++--------+----------+
+| Distro | Init     |
++========+==========+
+| RHEL   | systemd  |
++--------+----------+
+| CentOS | systemd  |
++--------+----------+
+| Rocky  | systemd  |
++--------+----------+
+| Fedora | systemd  |
++--------+----------+
+| Alma   | systemd  |
++--------+----------+
+| Oracle | systemd  |
++--------+----------+
+| Debian | systemd  |
++--------+----------+
+| Ubuntu | systemd  |
++--------+----------+
+| Alpine | busybox  |
++--------+----------+
+| Arch   | systemd  |
++--------+----------+
+| Gentoo | init     |
++--------+----------+
+
 
 pkgconfig
 =========
@@ -386,20 +387,33 @@ Environments and other shell behaviors
 Your environments come from your shell.
 First, let's look into what your default shell is.
 
-::
+``./tests/default_shell.sh``
 
-    λ ./tests/default_shell.sh
-    alma.out -> /bin/bash
-    alpine.out -> /bin/bash
-    arch.out -> /usr/bin/bash
-    centos.out -> /bin/bash
-    debian.out -> /bin/bash
-    fedora.out -> /bin/bash
-    gentoo.out -> /bin/bash
-    oracle.out -> /bin/bash
-    rhel.out -> /bin/bash
-    rocky.out -> /bin/bash
-    ubuntu.out -> /bin/bash
++--------+---------------+
+| Distro | Default Shell |
++========+===============+
+| RHEL   | /bin/bash     |
++--------+---------------+
+| CentOS | /bin/bash     |
++--------+---------------+
+| Rocky  | /bin/bash     |
++--------+---------------+
+| Fedora | /bin/bash     |
++--------+---------------+
+| Alma   | /bin/bash     |
++--------+---------------+
+| Oracle | /bin/bash     |
++--------+---------------+
+| Debian | /bin/bash     |
++--------+---------------+
+| Ubuntu | /bin/bash     |
++--------+---------------+
+| Alpine | /bin/bash     |
++--------+---------------+
+| Arch   | /usr/bin/bash |
++--------+---------------+
+| Gentoo | /bin/bash     |
++--------+---------------+
 
 It appears that they're all bash, which makes our lives easier.
 
@@ -724,28 +738,3 @@ However, on userspace in those distros you're able to ping due to the
 capabilities set on the ping binary, which was somehow dropped when we enter
 into the unshared environment.
 
-+------------+---------------------------------------+
-| File       | net.ipv4.ping_group_range             |
-+============+=======================================+
-| alma.out   | 0       2147483647                    |
-+------------+---------------------------------------+
-| alpine.out | 999   59999                           |
-+------------+---------------------------------------+
-| arch.out   | 0       2147483647                    |
-+------------+---------------------------------------+
-| centos.out | 1     0                               |
-+------------+---------------------------------------+
-| debian.out | 1     0                               |
-+------------+---------------------------------------+
-| fedora.out | 0     2147483647                      |
-+------------+---------------------------------------+
-| gentoo.out | 1     0                               |
-+------------+---------------------------------------+
-| oracle.out | 1     0                               |
-+------------+---------------------------------------+
-| rhel.out   | 0       2147483647                    |
-+------------+---------------------------------------+
-| rocky.out  | 0      2147483647                     |
-+------------+---------------------------------------+
-| ubuntu.out | 0     2147483647                      |
-+------------+---------------------------------------+

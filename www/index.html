@@ -669,80 +669,78 @@ against glibc, however, in some cases, especially ones that runs your
 application in a alpine docker container, it may need to be compiled
 to musl libc.</p>
 <p>There may also be other small tweaks that the upstream makes to glibc.
-i.e., <a class="reference external" href="https://salsa.debian.org/glibc-team/glibc/-/tree/sid/debian/patches">Debain Glibc Patches</a></p>
-<pre class="literal-block">
-λ ./tests/ldd.sh
-alma.out -&gt; ldd (GNU libc) 2.34
-alpine.err -&gt; musl libc (x86_64)
-arch.out -&gt; ldd (GNU libc) 2.39
-centos.out -&gt; ldd (GNU libc) 2.17
-debian.out -&gt; ldd (Debian GLIBC 2.36-9+deb12u3) 2.36
-fedora.out -&gt; ldd (GNU libc) 2.37
-gentoo.out -&gt; ldd (Gentoo 2.37-r7 (patchset 10)) 2.37
-oracle.out -&gt; ldd (GNU libc) 2.17
-rhel.out -&gt; ldd (GNU libc) 2.34
-rocky.out -&gt; ldd (GNU libc) 2.34
-ubuntu.out -&gt; ldd (Ubuntu GLIBC 2.35-0ubuntu3.5) 2.35
-</pre>
+i.e., <a class="reference external" href="https://salsa.debian.org/glibc-team/glibc/-/tree/sid/debian/patches">Debain glibc patches</a>
+<a class="reference external" href="https://github.com/gentoo/glibc-patches/tree/master">Gentoo glibc patchset</a></p>
+<p><tt class="docutils literal">./tests/ldd.sh</tt></p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="18%" />
-<col width="57%" />
-<col width="24%" />
+<col width="15%" />
+<col width="26%" />
+<col width="17%" />
+<col width="43%" />
 </colgroup>
 <thead valign="bottom">
 <tr><th class="head">Distro</th>
-<th class="head">LDD Vendor</th>
-<th class="head">LDD
-Version</th>
+<th class="head">Vendor</th>
+<th class="head">Version</th>
+<th class="head">Extra</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr><td>alma</td>
+<tr><td>RHEL</td>
 <td>GNU libc</td>
 <td>2.34</td>
+<td>&nbsp;</td>
 </tr>
-<tr><td>alpine</td>
-<td>musl libc (x86_64)</td>
-<td>???</td>
+<tr><td>CentOS</td>
+<td>GNU libc</td>
+<td>2.17</td>
+<td>&nbsp;</td>
 </tr>
-<tr><td>arch</td>
+<tr><td>Rocky</td>
+<td>GNU libc</td>
+<td>2.34</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Fedora</td>
+<td>GNU libc</td>
+<td>2.37</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Alma</td>
+<td>GNU libc</td>
+<td>2.24</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Oracle</td>
+<td>GNU libc</td>
+<td>2.17</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Debian</td>
+<td>Debian libc</td>
+<td>2.36</td>
+<td>2.36-9+deb12u3</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>Ubuntu GLIBC</td>
+<td>2.35</td>
+<td>2.35-0ubuntu3.5</td>
+</tr>
+<tr><td>Alpine</td>
+<td>musl</td>
+<td>1.2.4</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Arch</td>
 <td>GNU libc</td>
 <td>2.39</td>
+<td>&nbsp;</td>
 </tr>
-<tr><td>centos</td>
-<td>GNU libc</td>
-<td>2.17</td>
-</tr>
-<tr><td>debian</td>
-<td>Debian GLIBC 2.36-9+deb12u3</td>
-<td>2.36</td>
-</tr>
-<tr><td>fedora</td>
-<td>GNU libc</td>
+<tr><td>Gentoo</td>
+<td>Gentoo glibc</td>
 <td>2.37</td>
-</tr>
-<tr><td>gentoo</td>
-<td>Gentoo 2.37-r7 (patchset
-10)</td>
-<td>2.37</td>
-</tr>
-<tr><td>oracle</td>
-<td>GNU libc</td>
-<td>2.17</td>
-</tr>
-<tr><td>rhel</td>
-<td>GNU libc</td>
-<td>2.34</td>
-</tr>
-<tr><td>rocky</td>
-<td>GNU libc</td>
-<td>2.34</td>
-</tr>
-<tr><td>ubuntu</td>
-<td>Ubuntu GLIBC
-2.35-0ubuntu3.5</td>
-<td>2.35</td>
+<td>2.37-r7 (patchset 10)</td>
 </tr>
 </tbody>
 </table>
@@ -752,20 +750,53 @@ Version</th>
 <p>Systemd is a very common init system, however, for alpine, gentoo, and some
 other obscure distros, you may need to supply another form of service file. Such
 as a less declarative format i.e., a script.</p>
-<pre class="literal-block">
-λ ./tests/init.sh
-alma.out -&gt; systemd
-alpine.out -&gt; busybox
-arch.out -&gt; systemd
-centos.out -&gt; systemd
-debian.out -&gt; systemd
-fedora.out -&gt; systemd
-gentoo.out -&gt; init
-oracle.out -&gt; systemd
-rhel.out -&gt; systemd
-rocky.out -&gt; systemd
-ubuntu.out -&gt; systemd
-</pre>
+<p><tt class="docutils literal">./tests/init.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Init</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>systemd</td>
+</tr>
+<tr><td>CentOS</td>
+<td>systemd</td>
+</tr>
+<tr><td>Rocky</td>
+<td>systemd</td>
+</tr>
+<tr><td>Fedora</td>
+<td>systemd</td>
+</tr>
+<tr><td>Alma</td>
+<td>systemd</td>
+</tr>
+<tr><td>Oracle</td>
+<td>systemd</td>
+</tr>
+<tr><td>Debian</td>
+<td>systemd</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>systemd</td>
+</tr>
+<tr><td>Alpine</td>
+<td>busybox</td>
+</tr>
+<tr><td>Arch</td>
+<td>systemd</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>init</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="pkgconfig">
 <h2><a class="toc-backref" href="#toc-entry-15">pkgconfig</a></h2>
@@ -787,20 +818,53 @@ such as openssl, udev, systemd, ncurses, panel, etc...</p>
 <p>![env](img/env.png)</p>
 <p>Your environments come from your shell.
 First, let's look into what your default shell is.</p>
-<pre class="literal-block">
-λ ./tests/default_shell.sh
-alma.out -&gt; /bin/bash
-alpine.out -&gt; /bin/bash
-arch.out -&gt; /usr/bin/bash
-centos.out -&gt; /bin/bash
-debian.out -&gt; /bin/bash
-fedora.out -&gt; /bin/bash
-gentoo.out -&gt; /bin/bash
-oracle.out -&gt; /bin/bash
-rhel.out -&gt; /bin/bash
-rocky.out -&gt; /bin/bash
-ubuntu.out -&gt; /bin/bash
-</pre>
+<p><tt class="docutils literal">./tests/default_shell.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Default Shell</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>CentOS</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Rocky</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Fedora</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Alma</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Oracle</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Debian</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Alpine</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Arch</td>
+<td>/usr/bin/bash</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>/bin/bash</td>
+</tr>
+</tbody>
+</table>
 <p>It appears that they're all bash, which makes our lives easier.</p>
 <p>To quote from the ` bash manpage &lt;<a class="reference external" href="https://linux.die.net/man/1/bash">https://linux.die.net/man/1/bash</a>&gt;`_</p>
 <blockquote>
@@ -1066,52 +1130,6 @@ unshare userspace package lacking one of the flags we're invoking.</p>
 <p>However, on userspace in those distros you're able to ping due to the
 capabilities set on the ping binary, which was somehow dropped when we enter
 into the unshared environment.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="24%" />
-<col width="76%" />
-</colgroup>
-<thead valign="bottom">
-<tr><th class="head">File</th>
-<th class="head">net.ipv4.ping_group_range</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr><td>alma.out</td>
-<td>0       2147483647</td>
-</tr>
-<tr><td>alpine.out</td>
-<td>999   59999</td>
-</tr>
-<tr><td>arch.out</td>
-<td>0       2147483647</td>
-</tr>
-<tr><td>centos.out</td>
-<td>1     0</td>
-</tr>
-<tr><td>debian.out</td>
-<td>1     0</td>
-</tr>
-<tr><td>fedora.out</td>
-<td>0     2147483647</td>
-</tr>
-<tr><td>gentoo.out</td>
-<td>1     0</td>
-</tr>
-<tr><td>oracle.out</td>
-<td>1     0</td>
-</tr>
-<tr><td>rhel.out</td>
-<td>0       2147483647</td>
-</tr>
-<tr><td>rocky.out</td>
-<td>0      2147483647</td>
-</tr>
-<tr><td>ubuntu.out</td>
-<td>0     2147483647</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
