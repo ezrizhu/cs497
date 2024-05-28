@@ -1779,7 +1779,8 @@ originally built for server workloads. optimized for server workloads.</p>
 params, and the <cite>/boot/config-$(uname -r)</cite> kernel config(compiled in).</p>
 <p>Please note that arch linux does not come with the config file, and alpine
 stores them under a non-standard name under <cite>/boot</cite>, they have been manually
-extracted into the out directory.</p>
+extracted into the out directory as <tt class="docutils literal"><span class="pre">alpine-kernel-config</span></tt> (taken from
+/boot/config-virt) and <tt class="docutils literal"><span class="pre">arch-kernel-config</span></tt> (taken from <tt class="docutils literal">/proc/config.gz</tt>)</p>
 <p>Here, you can see the differences to the system request key, how they're
 written in the kernel config (capitalized), and sysctl (lowercase).</p>
 <p><tt class="docutils literal">./tests/sysrq.sh</tt></p>
@@ -1828,8 +1829,16 @@ written in the kernel config (capitalized), and sysctl (lowercase).</p>
 <td>176</td>
 <td>0x01b6</td>
 </tr>
+<tr><td>Alpine</td>
+<td>1</td>
+<td>0x1</td>
+</tr>
 <tr><td>Gentoo</td>
 <td>0</td>
+<td>0x0</td>
+</tr>
+<tr><td>Arch</td>
+<td>16</td>
 <td>0x0</td>
 </tr>
 </tbody>

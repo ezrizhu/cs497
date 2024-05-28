@@ -756,7 +756,8 @@ params, and the `/boot/config-$(uname -r)` kernel config(compiled in).
 
 Please note that arch linux does not come with the config file, and alpine
 stores them under a non-standard name under `/boot`, they have been manually
-extracted into the out directory.
+extracted into the out directory as ``alpine-kernel-config`` (taken from
+/boot/config-virt) and ``arch-kernel-config`` (taken from ``/proc/config.gz``)
 
 Here, you can see the differences to the system request key, how they're
 written in the kernel config (capitalized), and sysctl (lowercase).
@@ -782,7 +783,11 @@ written in the kernel config (capitalized), and sysctl (lowercase).
 +--------+--------------------------------+-----------------------------------+
 | Ubuntu | 176                            | 0x01b6                            |
 +--------+--------------------------------+-----------------------------------+
+| Alpine | 1                              | 0x1                               |
++--------+--------------------------------+-----------------------------------+
 | Gentoo | 0                              | 0x0                               |
++--------+--------------------------------+-----------------------------------+
+| Arch   | 16                             | 0x0                               |
 +--------+--------------------------------+-----------------------------------+
 
 `sysrq docs <https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html>`_
