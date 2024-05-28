@@ -122,7 +122,7 @@ A terminal recording of the vagrant execution is available.
 
 `Clickable Link <https://asciinema.org/a/659739>`_
 
-.. image:: ./659739.svg
+.. image:: ./img/659739.svg
    :height: 30em
    :target: https://asciinema.org/a/659739
 
@@ -356,7 +356,7 @@ pkgconfig
 
 RHEL, Rocky, and Alma all contain the same below set.
 
-TODO: Finish this
+.. image:: img/pkgconfig.png
 
 bash-completion dracut form formw libcrypt libcrypto libelf libssl libxcrypt
 libzstd menu menuw ncurses++ ncurses ncurses++w ncursesw openssl panel panelw
@@ -376,7 +376,7 @@ running different versions and compile flags.
 
 TODO: Finish this
 
-![systemdver](img/systemdver.png)
+.. image:: img/systemdver.png
 
 Notably, only Arch is compiled without sysvinit support.
 
@@ -384,6 +384,7 @@ Environments and other shell behaviors
 ======================================
 
 ![env](img/env.png)
+.. image:: img/env.png
 
 Your environments come from your shell.
 First, let's look into what your default shell is.
@@ -435,15 +436,15 @@ files from the out directory. Our test covers ``.bash_profile``, ``.bash_login``
 ``.profile``, ``/etc/profile``, and ``/etc/profile.d/``.
 
 ``/etc/profile``
-![profile](img/profile.png)
+.. image:: img/profile.png
 ``/etc/profile.d``
-![profiled](img/profiled.png)
+.. image:: img/profiled.png
 ``.bash_profile``
-![bashprofile](img/bashprofile.png)
+.. image:: img/bashprofile.png
 ``.bash_login``
-![bashlogin](img/bashlogin.png)
+.. image:: img/bashlogin.png
 ``.profile``
-![dotprofile](img/dotprofile.png)
+.. image:: img/dotprofile.png
 
 File Structures
 ===============
@@ -462,8 +463,8 @@ Then, use your favorite diff tool to visually inspect the differences.
     vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
     vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result
 
-![rootfs diff part 1](img/rootfs-1.png)
-![rootfs diff part 2](img/rootfs-2.png)
+.. image:: img/rootfs-1.png
+.. image:: img/rootfs-2.png
 
 Proc FS
 -------
@@ -475,8 +476,8 @@ Then, use your favorite diff tool to visually inspect the differences.
     vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
     vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result
 
-![procfs diff part 1](img/procfs-1.png)
-![procfs diff part 2](img/procfs-2.png)
+.. image:: img/procfs-1.png
+.. image:: img/procfs-2.png
 
 Sys FS
 ------
@@ -488,7 +489,7 @@ Simply use your favorite diff tool to look at all the .out files at out/sysfs
     vim -d debian.out gentoo.out oracle.out rhel.out rocky.out ubuntu.out
     vim -d debian.out alma.out alpine.out arch.out centos.out fedora.out
 
-![sysfs diff](img/sysfs.png)
+.. image:: img/sysfs.png
 
 Dev FS
 ------
@@ -500,7 +501,7 @@ You can use your favorite diff tool to visually inspect the differences.
     vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result
     vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
 
-![devfs diff part 1](img/devfs.png)
+.. image:: img/devfs.png
 
 Sudo Secure Path
 ================
@@ -515,44 +516,71 @@ One notable divergence is that on any of the RHEL derivatives, `/usr/loca/bin`
 is not included in sbin, while every other distro we tested with has it in the
 secure path.
 
-::
+``./tests/secure_path.sh``
 
-    λ ./tests/secure_path.sh
-    alma.out: /sbin:/bin:/usr/sbin:/usr/bin
-    alpine.out: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    arch.out: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    centos.out: /sbin:/bin:/usr/sbin:/usr/bin
-    debian.out: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    fedora.out: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/lib/snapd/snap/bin
-    gentoo.out: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    oracle.out: /sbin:/bin:/usr/sbin:/usr/bin
-    rhel.out: /sbin:/bin:/usr/sbin:/usr/bin
-    rocky.out: /sbin:/bin:/usr/sbin:/usr/bin
-    ubuntu.out: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Distro | /sbin | /bin | /usr/sbin | /usr/bin | /usr/local/sbin | /usr/local/bin | /snap/bin | /var/lib/snapd/snap/bin |
++========+=======+======+===========+==========+=================+================+===========+=========================+
+| RHEL   | X     | X    | X         | X        |                 |                |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| CentOS | X     | X    | X         | X        |                 |                |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Rocky  | X     | X    | X         | X        |                 |                |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Fedora | X     | X    | X         | X        | X               | X              |           | X                       |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Alma   | X     | X    | X         | X        |                 |                |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Oracle | X     | X    | X         | X        |                 |                |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Debian | X     | X    | X         | X        | X               | X              |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Ubuntu | X     | X    | X         | X        | X               | X              | X         |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Alpine | X     | X    | X         | X        | X               | X              |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Arch   | X     | X    | X         | X        | X               | X              |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
+| Gentoo | X     | X    | X         | X        | X               | X              |           |                         |
++--------+-------+------+-----------+----------+-----------------+----------------+-----------+-------------------------+
 
 kernel config and sysctl
 ========================
 
-Kernel config, the configuration that the Linux kernel is compiled with, as well
-as the runtime kernel parameters(sysctl), can also vary drastically across
+Kernel config, the configuration that the Linux kernel is compiled with, as
+well as the runtime kernel parameters(sysctl), can also vary drastically across
 distros.
 
-I.e., all RHEL based distros have a lowered swappiness because they're more
-optimized for server workloads.
+I.e., all RHEL based distros have a lowered swappiness because they were
+originally built for server workloads. optimized for server workloads.
 
-::
+``vm.swappiness``
 
-    alma.out:vm.swappiness = 30
-    oracle.out:vm.swappiness = 30
-    centos.out:vm.swappiness = 30
-    fedora.out:vm.swappiness = 30
-    rocky.out:vm.swappiness = 30
-    rhel.out:vm.swappiness = 30
-    alpine.out:vm.swappiness = 60
-    arch.out:vm.swappiness = 60
-    debian.out:vm.swappiness = 60
-    gentoo.out:vm.swappiness = 60
-    ubuntu.out:vm.swappiness = 60
++--------+-------------+
+| Distro | Swappiness  |
++========+=============+
+| RHEL   | 30          |
++--------+-------------+
+| CentOS | 30          |
++--------+-------------+
+| Rocky  | 30          |
++--------+-------------+
+| Fedora | 30          |
++--------+-------------+
+| Alma   | 30          |
++--------+-------------+
+| Oracle | 30          |
++--------+-------------+
+| Debian | 60          |
++--------+-------------+
+| Ubuntu | 60          |
++--------+-------------+
+| Alpine | 60          |
++--------+-------------+
+| Arch   | 60          |
++--------+-------------+
+| Gentoo | 60          |
++--------+-------------+
 
 For this divergence point, we're recording each distro's `sysctl -a` runtime
 params, and the `/boot/config-$(uname -r)` kernel config(compiled in).
@@ -561,37 +589,35 @@ Please note that arch linux does not come with the config file, and alpine
 stores them under a non-standard name under `/boot`, hence why they're not
 included in this.
 
-Here, you can see the differences to the system request key, how they're written
-in the kernel config (capitalized), and sysctl (lowercase).
+Here, you can see the differences to the system request key, how they're
+written in the kernel config (capitalized), and sysctl (lowercase).
 
-::
+``./tests/sysrq.sh``
 
-    λ ./tests/sysrq.sh
-    alma.out
-    kernel.sysrq = 16
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x1
-    centos.out
-    kernel.sysrq = 16
-    debian.out
-    kernel.sysrq = 438
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x01b6
-    fedora.out
-    kernel.sysrq = 16
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x0
-    gentoo.out
-    kernel.sysrq = 0
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x0
-    oracle.out
-    kernel.sysrq = 16
-    rhel.out
-    kernel.sysrq = 16
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x1
-    rocky.out
-    kernel.sysrq = 16
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x1
-    ubuntu.out
-    kernel.sysrq = 176
-    CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE=0x01b6
++--------+--------------------------------+-----------------------------------+
+| Distro | kernel.sysrq                   | CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE |
++========+================================+===================================+
+| RHEL   | 16                             | 0x1                               |
++--------+--------------------------------+-----------------------------------+
+| CentOS | 16                             |                                   |
++--------+--------------------------------+-----------------------------------+
+| Rocky  | 16                             | 0x1                               |
++--------+--------------------------------+-----------------------------------+
+| Fedora | 16                             | 0x0                               |
++--------+--------------------------------+-----------------------------------+
+| Alma   | 16                             | 0x1                               |
++--------+--------------------------------+-----------------------------------+
+| Oracle | 16                             |                                   |
++--------+--------------------------------+-----------------------------------+
+| Debian | 438                            | 0x01b6                            |
++--------+--------------------------------+-----------------------------------+
+| Ubuntu | 176                            | 0x01b6                            |
++--------+--------------------------------+-----------------------------------+
+| Gentoo | 0                              | 0x0                               |
++--------+--------------------------------+-----------------------------------+
+
+`sysrq docs <https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html>`_
+
 
 There are a lot of other differences, such as the strictness of it's network
 protocols, as well as virtual memory parameters. Please also use your favorite
@@ -670,25 +696,25 @@ enough maximum number of memory map areas a process may have. To improve Linux
 on Desktop's experience for many gamers, distros have begun to increase that
 setting by default.
 
-[Arch Announcement](https://archlinux.org/news/increasing-the-default-vmmax_map_count-value/)
+Arch Announcement
+<https://archlinux.org/news/increasing-the-default-vmmax_map_count-value/>`__
 
-[Arch Mailing List](https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/thread/5GU7ZUFI25T2IRXIQ62YYERQKIPE3U6E/)
+Arch Mailing List
+<https://lists.archlinux.org/archives/list/arch-dev-public@lists.archlinux.org/thread/5GU7ZUFI25T2IRXIQ62YYERQKIPE3U6E/>`__
 
-[Ubuntu bug
-report](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792)
+Ubuntu bug report
+<https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792>`__
 
-[Ubuntu
-Patch](https://git.launchpad.net/ubuntu/+source/procps/commit/?h=applied/2%254.0.4-4ubuntu2&id=b4a4a046cf018a942598e55f3fbc7b5ef474f676)
+Ubuntu Patch
+<https://git.launchpad.net/ubuntu/+source/procps/commit/?h=applied/2%254.0.4-4ubuntu2&id=b4a4a046cf018a942598e55f3fbc7b5ef474f676>`__
 
-[Fedora wiki on the
-change](https://fedoraproject.org/wiki/Changes/IncreaseVmMaxMapCount)
+Fedora wiki on the change
+<https://fedoraproject.org/wiki/Changes/IncreaseVmMaxMapCount>`__
 
-[NixOS PR](https://github.com/NixOS/nixpkgs/pull/238459)
+`NixOS PR <https://github.com/NixOS/nixpkgs/pull/238459>`__
 
-
-See also:
-[kernel docs on
-max-mem-count](https://docs.kernel.org/admin-guide/sysctl/vm.html#max-map-count)
+See also: `kernel docs on max-mem-count
+<https://docs.kernel.org/admin-guide/sysctl/vm.html#max-map-count>`_
 
 Userspace Namespaces
 ====================

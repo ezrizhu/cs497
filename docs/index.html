@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<title>book.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 8954 2022-01-20 10:10:25Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See https://docutils.sourceforge.io/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#distro-differences" id="toc-entry-1">Distro Differences</a><ul>
+<li><a class="reference internal" href="#introduction" id="toc-entry-2">Introduction</a></li>
+<li><a class="reference internal" href="#testing-infrastructure" id="toc-entry-3">Testing Infrastructure</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linux-distributions" id="toc-entry-4">Linux Distributions</a><ul>
+<li><a class="reference internal" href="#debian" id="toc-entry-5">Debian</a></li>
+<li><a class="reference internal" href="#ubuntu" id="toc-entry-6">Ubuntu</a></li>
+<li><a class="reference internal" href="#alpine" id="toc-entry-7">Alpine</a></li>
+<li><a class="reference internal" href="#arch" id="toc-entry-8">Arch</a></li>
+<li><a class="reference internal" href="#rocky" id="toc-entry-9">Rocky</a></li>
+<li><a class="reference internal" href="#fedora" id="toc-entry-10">Fedora</a></li>
+<li><a class="reference internal" href="#gentoo" id="toc-entry-11">Gentoo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#main-differences" id="toc-entry-12">Main Differences</a><ul>
+<li><a class="reference internal" href="#libc" id="toc-entry-13">libc</a></li>
+<li><a class="reference internal" href="#init" id="toc-entry-14">init</a></li>
+<li><a class="reference internal" href="#pkgconfig" id="toc-entry-15">pkgconfig</a></li>
+<li><a class="reference internal" href="#systemd" id="toc-entry-16">systemd</a></li>
+<li><a class="reference internal" href="#environments-and-other-shell-behaviors" id="toc-entry-17">Environments and other shell behaviors</a></li>
+<li><a class="reference internal" href="#file-structures" id="toc-entry-18">File Structures</a><ul>
+<li><a class="reference internal" href="#root-fs" id="toc-entry-19">Root FS</a></li>
+<li><a class="reference internal" href="#proc-fs" id="toc-entry-20">Proc FS</a></li>
+<li><a class="reference internal" href="#sys-fs" id="toc-entry-21">Sys FS</a></li>
+<li><a class="reference internal" href="#dev-fs" id="toc-entry-22">Dev FS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sudo-secure-path" id="toc-entry-23">Sudo Secure Path</a></li>
+<li><a class="reference internal" href="#kernel-config-and-sysctl" id="toc-entry-24">kernel config and sysctl</a></li>
+<li><a class="reference internal" href="#sh" id="toc-entry-25">sh</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#notable-instances-of-divergence" id="toc-entry-26">Notable Instances of Divergence</a><ul>
+<li><a class="reference internal" href="#vm-max-map-count-1" id="toc-entry-27">vm_max_map_count</a></li>
+<li><a class="reference internal" href="#userspace-namespaces" id="toc-entry-28">Userspace Namespaces</a></li>
+<li><a class="reference internal" href="#ping" id="toc-entry-29">ping</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="distro-differences">
+<h1><a class="toc-backref" href="#toc-entry-1">Distro Differences</a></h1>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#toc-entry-2">Introduction</a></h2>
+<p>Linux distributions provide users with a wide array of options when choosing an
+operating system. Users typically anticipate that software designed for Linux
+should operate seamlessly across various distributions. Nonetheless, the
+responsibility falls on developers to ensure their applications are compatible
+with all the different distros. This book aims to establish a foundation that
+assists software engineers in creating more versatile programs. It does so by
+highlighting some of the key differences among Linux distributions that are
+significant for software development, as well as explaining how these
+diversities are first built into the distributions themselves.</p>
+<p>In the Reproduction chapter, you will find guides on how you can also generate
+these distro differences for your own analysis.</p>
+<p>Under the Distros section, you will find how these linux distributions are
+built from the ground up, which is where the divergence happens.</p>
+<p>Under the Main Differences section, you will find some of the main differences
+between Linux distros, and how they may impact a software's portability.</p>
+<p>This book hopes to be useful for all software engineers, sysadmins, and
+security researchers. This book, code used throughout, and results are all
+available on <a class="reference external" href="https://github.com/ezrizhu/cs497">Github</a> under the MIT
+License.</p>
+<p>This document was created by <cite>Ezri Zhu &lt;https://ezrizhu.com&gt;</cite>&gt; as the final
+project for CS 497 Independent Study at the Stevens Institute of Technology,
+advised by Professor <a class="reference external" href="https://www.stevens.edu/profile/mgreenbe">Michael Greenberg</a>.</p>
+</div>
+<div class="section" id="testing-infrastructure">
+<h2><a class="toc-backref" href="#toc-entry-3">Testing Infrastructure</a></h2>
+<p>We can reproduce our experiments with Vagrant and Ansible. Vagrant is
+responsible for spinning up the VMs that we want, and Ansible is to run the
+experiments on these machines.</p>
+<p>Ansible will read from the inventory file generated by Vagrant.</p>
+<p>Currently, the Vagrant file is configured to use the <a class="reference external" href="https://vagrant-libvirt.github.io/vagrant-libvirt">libvirt provider</a>. However, you can also
+use the VirtualBox provider that's provided by Vagrant by default.</p>
+<p>First, please ensure Ansible, Vagrant, and the Vagrant Provider that you're
+using is installed and setup.</p>
+<p>Second, clone the repository <tt class="docutils literal">git clone <span class="pre">https://github.com/ezrizhu/cs497.git</span></tt>
+and then delete the output directory <tt class="docutils literal">out</tt> from the cloned repo.</p>
+<p>To spin up the Vagrant environment and run the ansible playbook, simply run
+<tt class="docutils literal">sudo vagrant up</tt>.</p>
+<p>You can also easily modify the array of distros that you want to test on by
+editing the <tt class="docutils literal">Vagrantfile</tt> in the repository.</p>
+<p>Here is what it looks like.</p>
+<p><a class="reference external" href="https://github.com/ezrizhu/cs497/blob/main/Vagrantfile">Vagrantfile</a></p>
+<pre class="literal-block">
+config.vm.define &quot;arch&quot; do |arch|
+  arch.vm.box = &quot;archlinux/archlinux&quot;
+  arch.vm.provision &quot;shell&quot;, inline: &quot;sudo pacman --noconfirm --needed -Syy python pkg-config&quot;
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+end
+
+config.vm.define &quot;alma&quot; do |alma|
+  alma.vm.box = &quot;generic/alma9&quot;
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+end
+
+config.vm.provision &quot;ansible&quot;, after: :all do |ansible|
+  ansible.playbook = &quot;playbook.yml&quot;
+end
+</pre>
+<p>For distros that may require some setup commands to be run, we're using the
+shell provisioner. The ansible provisioner will be run after that.</p>
+<p>After Vagrant spins up all the VMs and run the shell provisioner if specified,
+it will run the ansible playbook.</p>
+<p>Here's what that looks like.</p>
+<p><a class="reference external" href="https://github.com/ezrizhu/cs497/blob/main/playbook.yml">playbook.yml</a></p>
+<pre class="literal-block">
+- hosts: all
+  vars:
+    commands:
+      - cmd: uname -a
+        output_dir: uname
+      - cmd: ldd --version
+        output_dir: ldd
+      - cmd: whereis python
+        output_dir: py_where
+      - cmd: python --version
+        output_dir: py_where
+      - cmd: sudo sysctl kernel.unprivileged_userns_clone
+        output_dir: userns_clone
+      - cmd: unshare --map-root-user ping -c1 1.1
+        output_dir: unshare_ping
+      - cmd: ls -lah /sbin/init
+        output_dir: init
+</pre>
+<p>You can also modify the array of tests that you want to run by editing the
+file.</p>
+<p>After that is complete, the outputs of all of our experiments will be under
+<tt class="docutils literal">out/</tt>.</p>
+<p>When you are done running the experiments, run <tt class="docutils literal">vagrant destroy <span class="pre">-f</span></tt> to remove
+all the VMs Vagrant created.</p>
+<p>A terminal recording of the vagrant execution is available.</p>
+<p><a class="reference external" href="https://asciinema.org/a/659739">Clickable Link</a></p>
+<a class="reference external image-reference" href="https://asciinema.org/a/659739"><object data="./img/659739.svg" style="height: 30em;" type="image/svg+xml">./img/659739.svg</object></a>
+<p>I also developed test scripts for some of the below differences to help extract
+the relevant data. They can be found under <tt class="docutils literal">tests/</tt>, and will read the data
+from <tt class="docutils literal">out/</tt> generated by the last steps.</p>
+</div>
+</div>
+<div class="section" id="linux-distributions">
+<h1><a class="toc-backref" href="#toc-entry-4">Linux Distributions</a></h1>
+<p>By default, our Vagrant covers some of the popular Linux distributions.</p>
+<p>RHEL (Red Hat Enterprise Linux) is one of the most popular Linux distribution
+developed by Red Hat. CentOS was one of the most common, free Linux distro
+until it was discontinued by Red Hat. Rocky Linux emerged to become it's
+community maintained successor. Fedora is also a community maintained desktop
+orientated rhel derivative. Oracle and Alma linux are both also rhel
+derivatives.</p>
+<p>Debian is another one of the most popular Linux distributions, it is community
+maintained, with Ubuntu being one of the very popular corporate supported
+derivative.</p>
+<p>Alpine Linux is another community maintained Linux distribution that is focused
+on simplicity. It uses a busybox instead of coreutils, and musl libc instead of
+glibc. It is very popular in container runtimes as it is very light weight.</p>
+<p>Lastly, Arch and Gentoo are both power user focused Linux distributions that
+offers an incredible amount of user customization. They are both quite
+different as well.</p>
+<p><tt class="docutils literal">./tests/uname.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="15%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">OS</th>
+<th class="head">uname</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>GNU/Linux</td>
+<td>5.14.0-362.8.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>CentOS</td>
+<td>GNU/Linux</td>
+<td>3.10.0-1160.105.1.el7.x86_64 #1 SMP</td>
+</tr>
+<tr><td>Rocky</td>
+<td>GNU/Linux</td>
+<td>5.14.0-362.13.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>Fedora</td>
+<td>GNU/Linux</td>
+<td>6.6.8-100.fc38.x86_64 #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>Alma</td>
+<td>GNU/Linux</td>
+<td>5.14.0-362.13.1.el9_3.x86_64 #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>Oracle</td>
+<td>GNU/Linux</td>
+<td>3.10.0-1160.105.1.0.1.el7.x86_64 #1 SMP</td>
+</tr>
+<tr><td>Debian</td>
+<td>GNU/Linux</td>
+<td>6.1.0-17-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.69-1</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>GNU/Linux</td>
+<td>5.15.0-91-generic #101-Ubuntu SMP</td>
+</tr>
+<tr><td>Alpine</td>
+<td>Linux</td>
+<td>6.1.70-0-virt #1-Alpine SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>Arch</td>
+<td>GNU/Linux</td>
+<td>6.8.8-arch1-1 #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>GNU/Linux</td>
+<td>6.1.69-gentoo-dist #1 SMP PREEMPT_DYNAMIC</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="debian">
+<h2><a class="toc-backref" href="#toc-entry-5">Debian</a></h2>
+<p>Debian is installed via <a class="reference external" href="https://wiki.debian.org/Debootstrap">debootstrap(debian)</a> <a class="reference external" href="https://salsa.debian.org/installer-team/debootstrap">source</a>.</p>
+<p>A good amount of modifications to the kernel by the Debian team can be found in
+their <a class="reference external" href="https://salsa.debian.org/kernel-team/linux/-/tree/master/debian/patches/debian">linux repo</a></p>
+<p>Their changes for other packages that Debian ships with can be found also in
+<a class="reference external" href="https://salsa.debian.org/debian/">the debian gitlab</a>. Such as <a class="reference external" href="https://salsa.debian.org/debian/procps">procps</a>.</p>
+</div>
+<div class="section" id="ubuntu">
+<h2><a class="toc-backref" href="#toc-entry-6">Ubuntu</a></h2>
+<p>Ubuntu is also installed via <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/debootstrap">debootstrap(ubuntu)</a>.</p>
+<p>All of the source code for Ubuntu, as well as all the OS divergences from
+Debian and the mainline kernel, can be found on their <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/linux">git server</a></p>
+<p>For example, the <a class="reference external" href="vmmaxmap.md">vm_max_map_count</a> issue was patched in
+Ubuntu's <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/procps">procps package</a></p>
+<p>Their fork of the Linux kernel can also be found <a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/linux">here</a>.</p>
+</div>
+<div class="section" id="alpine">
+<h2><a class="toc-backref" href="#toc-entry-7">Alpine</a></h2>
+<p>Alpine's differences can be easily spotted because their build process is very
+simple. Their repository for packages build scripts also has the script to
+build the base system.</p>
+<p>The <a class="reference external" href="https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout">base layouts directory</a>.</p>
+<p>The <a class="reference external" href="https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/alpine-baselayout/APKBUILD">base layout build file</a>.</p>
+</div>
+<div class="section" id="arch">
+<h2><a class="toc-backref" href="#toc-entry-8">Arch</a></h2>
+<p>Since Arch Linux is mostly less opinionated in terms of defaults, the only
+places where you can find where differences are built in on the distro levels
+is the installer.</p>
+<p><a class="reference external" href="https://github.com/archlinux">Arch Linux Github</a>
+<a class="reference external" href="https://github.com/archlinux/linux">Kernel Repo</a>
+<a class="reference external" href="https://github.com/archlinux/archinstall">Installer Repo</a></p>
+</div>
+<div class="section" id="rocky">
+<h2><a class="toc-backref" href="#toc-entry-9">Rocky</a></h2>
+<p>Rocky Linux is a community fork of CentOS after RedHat made it into stream only.</p>
+<p>It's build process is similar to the rest of the RHEL derivatives. You can find
+the base package that builds the OS on their Gitlab. Which includes the default
+packages, sysctl.conf config, os-release file, etc...</p>
+<p><a class="reference external" href="https://git.rockylinux.org/staging/rpms/rocky-release/-/blob/r10s/SOURCES">rocky-release</a></p>
+</div>
+<div class="section" id="fedora">
+<h2><a class="toc-backref" href="#toc-entry-10">Fedora</a></h2>
+<p>Fedora follows a similar install structure as the rest of the RHEL derivatives.
+You can find the fedora-release package on <a class="reference external" href="https://src.fedoraproject.org/rpms/fedora-release/tree/rawhide">the fedora
+gitlab</a></p>
+</div>
+<div class="section" id="gentoo">
+<h2><a class="toc-backref" href="#toc-entry-11">Gentoo</a></h2>
+<p>The Gentoo base image comes from the <a class="reference external" href="https://wiki.gentoo.org/wiki/Stage_file">stage3 tarball</a>. Which is built with <a class="reference external" href="https://wiki.gentoo.org/wiki/Catalyst">Catalyst</a> using <a class="reference external" href="https://wiki.gentoo.org/wiki/Catalyst#Specs_files">spec files</a>.</p>
+<p>They're all highly customizable and different. You can find the spec files in
+the <a class="reference external" href="https://gitweb.gentoo.org/proj/catalyst.git/">catalyst repo</a></p>
+<p>That said, if your user uses Gentoo, they are hopefully competent enough to
+make their own patch to your software.</p>
+</div>
+</div>
+<div class="section" id="main-differences">
+<h1><a class="toc-backref" href="#toc-entry-12">Main Differences</a></h1>
+<div class="section" id="libc">
+<h2><a class="toc-backref" href="#toc-entry-13">libc</a></h2>
+<p>Most of the time we assume it would be fine if we are just compiling against
+glibc, however, in some cases, especially ones that runs your application in a
+alpine docker container, it may need to be compiled to musl libc.</p>
+<p>There may also be other small tweaks that the upstream makes to glibc. i.e.,
+<a class="reference external" href="https://salsa.debian.org/glibc-team/glibc/-/tree/sid/debian/patches">Debain glibc patches</a> <a class="reference external" href="https://github.com/gentoo/glibc-patches/tree/master">Gentoo
+glibc patchset</a></p>
+<p><tt class="docutils literal">./tests/ldd.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="26%" />
+<col width="17%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Vendor</th>
+<th class="head">Version</th>
+<th class="head">Extra</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>GNU libc</td>
+<td>2.34</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CentOS</td>
+<td>GNU libc</td>
+<td>2.17</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Rocky</td>
+<td>GNU libc</td>
+<td>2.34</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Fedora</td>
+<td>GNU libc</td>
+<td>2.37</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Alma</td>
+<td>GNU libc</td>
+<td>2.24</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Oracle</td>
+<td>GNU libc</td>
+<td>2.17</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Debian</td>
+<td>Debian libc</td>
+<td>2.36</td>
+<td>2.36-9+deb12u3</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>Ubuntu GLIBC</td>
+<td>2.35</td>
+<td>2.35-0ubuntu3.5</td>
+</tr>
+<tr><td>Alpine</td>
+<td>musl</td>
+<td>1.2.4</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Arch</td>
+<td>GNU libc</td>
+<td>2.39</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>Gentoo glibc</td>
+<td>2.37</td>
+<td>2.37-r7 (patchset 10)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="init">
+<h2><a class="toc-backref" href="#toc-entry-14">init</a></h2>
+<p>Systemd is a very common init system, however, for alpine, gentoo, and some
+other obscure distros, you may need to supply another form of service file.
+Such as a less declarative format i.e., a script.</p>
+<p><tt class="docutils literal">./tests/init.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Init</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>systemd</td>
+</tr>
+<tr><td>CentOS</td>
+<td>systemd</td>
+</tr>
+<tr><td>Rocky</td>
+<td>systemd</td>
+</tr>
+<tr><td>Fedora</td>
+<td>systemd</td>
+</tr>
+<tr><td>Alma</td>
+<td>systemd</td>
+</tr>
+<tr><td>Oracle</td>
+<td>systemd</td>
+</tr>
+<tr><td>Debian</td>
+<td>systemd</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>systemd</td>
+</tr>
+<tr><td>Alpine</td>
+<td>busybox</td>
+</tr>
+<tr><td>Arch</td>
+<td>systemd</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>init</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pkgconfig">
+<h2><a class="toc-backref" href="#toc-entry-15">pkgconfig</a></h2>
+<p><tt class="docutils literal">pkgconfig <span class="pre">--list-all</span></tt> lists all the pre-installed libraries.</p>
+<p>RHEL, Rocky, and Alma all contain the same below set.</p>
+<img alt="img/pkgconfig.png" src="img/pkgconfig.png" />
+<p>bash-completion dracut form formw libcrypt libcrypto libelf libssl libxcrypt
+libzstd menu menuw ncurses++ ncurses ncurses++w ncursesw openssl panel panelw
+systemd tic tinfo udev zlib</p>
+<p>Arch and Gentoo comes with the largest sit due to the nature of compiling
+software on their distro, specifically Gentoo.</p>
+<p>And most of the rest of the distros comes with very similar sets of libraries,
+such as openssl, udev, systemd, ncurses, panel, etc...</p>
+</div>
+<div class="section" id="systemd">
+<h2><a class="toc-backref" href="#toc-entry-16">systemd</a></h2>
+<p>Systemd, being the most popular init system for Linux distros, can also be
+running different versions and compile flags.</p>
+<p>TODO: Finish this</p>
+<img alt="img/systemdver.png" src="img/systemdver.png" />
+<p>Notably, only Arch is compiled without sysvinit support.</p>
+</div>
+<div class="section" id="environments-and-other-shell-behaviors">
+<h2><a class="toc-backref" href="#toc-entry-17">Environments and other shell behaviors</a></h2>
+<p>![env](img/env.png)
+.. image:: img/env.png</p>
+<p>Your environments come from your shell.
+First, let's look into what your default shell is.</p>
+<p><tt class="docutils literal">./tests/default_shell.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Default Shell</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>CentOS</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Rocky</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Fedora</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Alma</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Oracle</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Debian</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Alpine</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Arch</td>
+<td>/usr/bin/bash</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>/bin/bash</td>
+</tr>
+</tbody>
+</table>
+<p>It appears that they're all bash, which makes our lives easier.</p>
+<p>TODO: Finish this</p>
+<p>To quote from the <a class="reference external" href="https://linux.die.net/man/1/bash">bash manpage</a></p>
+<blockquote>
+When bash is invoked as an interactive login shell, or as a non-interactive
+shell with the --login option, it first reads and executes commands from the
+file /etc/profile, if that file exists. After reading that file, it looks for
+~/.bash_profile, ~/.bash_login, and ~/.profile, in that order, and reads and
+executes commands from the first one that exists and is readable. The
+--noprofile option may be used when the shell is started to inhibit this
+behavior.</blockquote>
+<p>You can use your favorite diff tool to inspect the differences in all of these
+files from the out directory. Our test covers <tt class="docutils literal">.bash_profile</tt>, <tt class="docutils literal">.bash_login</tt>,
+<tt class="docutils literal">.profile</tt>, <tt class="docutils literal">/etc/profile</tt>, and <tt class="docutils literal">/etc/profile.d/</tt>.</p>
+<p><tt class="docutils literal">/etc/profile</tt>
+.. image:: img/profile.png
+<tt class="docutils literal">/etc/profile.d</tt>
+.. image:: img/profiled.png
+<tt class="docutils literal">.bash_profile</tt>
+.. image:: img/bashprofile.png
+<tt class="docutils literal">.bash_login</tt>
+.. image:: img/bashlogin.png
+<tt class="docutils literal">.profile</tt>
+.. image:: img/dotprofile.png</p>
+</div>
+<div class="section" id="file-structures">
+<h2><a class="toc-backref" href="#toc-entry-18">File Structures</a></h2>
+<p>With Linux's &quot;everything is a file&quot; model, developers tend to make certain
+assumptions about the system provided psudo-filesystems such as the root tree,
+procfs, and sysfs. But could those directories change?</p>
+<div class="section" id="root-fs">
+<h3><a class="toc-backref" href="#toc-entry-19">Root FS</a></h3>
+<p><cite>./tests/root.sh</cite> outputs result files to out/root</p>
+<p>Then, use your favorite diff tool to visually inspect the differences.</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd>vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
+vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result</dd>
+</dl>
+<img alt="img/rootfs-1.png" src="img/rootfs-1.png" />
+<img alt="img/rootfs-2.png" src="img/rootfs-2.png" />
+</div>
+<div class="section" id="proc-fs">
+<h3><a class="toc-backref" href="#toc-entry-20">Proc FS</a></h3>
+<p><tt class="docutils literal">./tests/procfs.sh</tt> outputs result files to out/root
+Then, use your favorite diff tool to visually inspect the differences.</p>
+<pre class="literal-block">
+vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
+vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result
+</pre>
+<img alt="img/procfs-1.png" src="img/procfs-1.png" />
+<img alt="img/procfs-2.png" src="img/procfs-2.png" />
+</div>
+<div class="section" id="sys-fs">
+<h3><a class="toc-backref" href="#toc-entry-21">Sys FS</a></h3>
+<p>Simply use your favorite diff tool to look at all the .out files at out/sysfs</p>
+<pre class="literal-block">
+vim -d debian.out gentoo.out oracle.out rhel.out rocky.out ubuntu.out
+vim -d debian.out alma.out alpine.out arch.out centos.out fedora.out
+</pre>
+<img alt="img/sysfs.png" src="img/sysfs.png" />
+</div>
+<div class="section" id="dev-fs">
+<h3><a class="toc-backref" href="#toc-entry-22">Dev FS</a></h3>
+<p>You can use your favorite diff tool to visually inspect the differences.</p>
+<pre class="literal-block">
+vim -d debian.out.result gentoo.out.result  oracle.out.result  rhel.out.result  rocky.out.result  ubuntu.out.result
+vim -d debian.out.result alma.out.result  alpine.out.result  arch.out.result  centos.out.result fedora.out.result
+</pre>
+<img alt="img/devfs.png" src="img/devfs.png" />
+</div>
+</div>
+<div class="section" id="sudo-secure-path">
+<h2><a class="toc-backref" href="#toc-entry-23">Sudo Secure Path</a></h2>
+<p>Sudo secure path is the path that is used when a user uses sudo.</p>
+<p>When you write an administrative tool and expects something to be only executed
+with root permissions, you might install something to one of the sbin
+directories.</p>
+<p>One notable divergence is that on any of the RHEL derivatives, <cite>/usr/loca/bin</cite>
+is not included in sbin, while every other distro we tested with has it in the
+secure path.</p>
+<p><tt class="docutils literal">./tests/secure_path.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="6%" />
+<col width="5%" />
+<col width="10%" />
+<col width="9%" />
+<col width="15%" />
+<col width="14%" />
+<col width="10%" />
+<col width="23%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">/sbin</th>
+<th class="head">/bin</th>
+<th class="head">/usr/sbin</th>
+<th class="head">/usr/bin</th>
+<th class="head">/usr/local/sbin</th>
+<th class="head">/usr/local/bin</th>
+<th class="head">/snap/bin</th>
+<th class="head">/var/lib/snapd/snap/bin</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CentOS</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Rocky</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Fedora</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>X</td>
+</tr>
+<tr><td>Alma</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Oracle</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Debian</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Alpine</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Arch</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="kernel-config-and-sysctl">
+<h2><a class="toc-backref" href="#toc-entry-24">kernel config and sysctl</a></h2>
+<p>Kernel config, the configuration that the Linux kernel is compiled with, as
+well as the runtime kernel parameters(sysctl), can also vary drastically across
+distros.</p>
+<p>I.e., all RHEL based distros have a lowered swappiness because they were
+originally built for server workloads. optimized for server workloads.</p>
+<p><tt class="docutils literal">vm.swappiness</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Swappiness</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>30</td>
+</tr>
+<tr><td>CentOS</td>
+<td>30</td>
+</tr>
+<tr><td>Rocky</td>
+<td>30</td>
+</tr>
+<tr><td>Fedora</td>
+<td>30</td>
+</tr>
+<tr><td>Alma</td>
+<td>30</td>
+</tr>
+<tr><td>Oracle</td>
+<td>30</td>
+</tr>
+<tr><td>Debian</td>
+<td>60</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>60</td>
+</tr>
+<tr><td>Alpine</td>
+<td>60</td>
+</tr>
+<tr><td>Arch</td>
+<td>60</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<p>For this divergence point, we're recording each distro's <cite>sysctl -a</cite> runtime
+params, and the <cite>/boot/config-$(uname -r)</cite> kernel config(compiled in).</p>
+<p>Please note that arch linux does not come with the config file, and alpine
+stores them under a non-standard name under <cite>/boot</cite>, hence why they're not
+included in this.</p>
+<p>Here, you can see the differences to the system request key, how they're
+written in the kernel config (capitalized), and sysctl (lowercase).</p>
+<p><tt class="docutils literal">./tests/sysrq.sh</tt></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="43%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">kernel.sysrq</th>
+<th class="head">CONFIG_MAGIC_SYSRQ_DEFAULT_ENABLE</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>16</td>
+<td>0x1</td>
+</tr>
+<tr><td>CentOS</td>
+<td>16</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Rocky</td>
+<td>16</td>
+<td>0x1</td>
+</tr>
+<tr><td>Fedora</td>
+<td>16</td>
+<td>0x0</td>
+</tr>
+<tr><td>Alma</td>
+<td>16</td>
+<td>0x1</td>
+</tr>
+<tr><td>Oracle</td>
+<td>16</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>Debian</td>
+<td>438</td>
+<td>0x01b6</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>176</td>
+<td>0x01b6</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>0</td>
+<td>0x0</td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference external" href="https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html">sysrq docs</a></p>
+<p>There are a lot of other differences, such as the strictness of it's network
+protocols, as well as virtual memory parameters. Please also use your favorite
+diffing tool in the out directories for <cite>sysctl</cite> and <cite>kernel_config</cite> to explore
+the differences.</p>
+<p>![sysctl](img/sysctl.png)</p>
+<p>See also:</p>
+<p>[kernel.org kernel params
+docs](<a class="reference external" href="https://docs.kernel.org/admin-guide/kernel-parameters.html">https://docs.kernel.org/admin-guide/kernel-parameters.html</a>)</p>
+<p><tt class="docutils literal">man 5 proc</tt></p>
+<blockquote>
+<p>/proc/config.gz (since Linux 2.6) This  file  exposes  the
+configuration options that were used to build the currently running
+kernel, in the same format as they would be shown in the .config file
+that resulted when configuring the kernel (using make xconfig, make
+config, or similar).  The file contents are compressed; view or search
+them using zcat(1) and zgrep(1).  As long as no changes have been made
+to the following file, the contents of /proc/config.gz are the same as
+those provided by:</p>
+<p>cat /lib/modules/$(uname -r)/build/.config</p>
+<p>/proc/config.gz is provided only if the kernel is configured with
+CONFIG_IKCONFIG_PROC.</p>
+</blockquote>
+<p>From our suite of distros, only arch and gentoo comes with a config.gz in proc.</p>
+</div>
+<div class="section" id="sh">
+<h2><a class="toc-backref" href="#toc-entry-25">sh</a></h2>
+<p>When writing POSIX compliant scripts for usually systems purposes. We tend to
+use /bin/sh as our shabang. However, they're usually just symlinks to other
+shell interpreters. Most of the time it is bash with restricted shell (see man
+1 bash, under Restricted Shell).</p>
+<p>However in other times, it may be to busybox, or dash.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">/bin/sh</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>CentOS</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Rocky</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Fedora</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Alma</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Oracle</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Debian</td>
+<td>/bin/dash</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>/bin/dash</td>
+</tr>
+<tr><td>Alpine</td>
+<td>/bin/busybox</td>
+</tr>
+<tr><td>Arch</td>
+<td>/bin/bash</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>/bin/bash</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="notable-instances-of-divergence">
+<h1><a class="toc-backref" href="#toc-entry-26">Notable Instances of Divergence</a></h1>
+<div class="section" id="vm-max-map-count-1">
+<h2><a class="toc-backref" href="#toc-entry-27">vm_max_map_count</a></h2>
+<p>This one is more recent, certain Windows games crash on Linux due to a not high
+enough maximum number of memory map areas a process may have. To improve Linux
+on Desktop's experience for many gamers, distros have begun to increase that
+setting by default.</p>
+<p>Arch Announcement
+&lt;<a class="reference external" href="https://archlinux.org/news/increasing-the-default-vmmax_map_count-value/">https://archlinux.org/news/increasing-the-default-vmmax_map_count-value/</a>&gt;`__</p>
+<p>Arch Mailing List
+&lt;<a class="reference external" href="https://lists.archlinux.org/archives/list/arch-dev-public&#64;lists.archlinux.org/thread/5GU7ZUFI25T2IRXIQ62YYERQKIPE3U6E/">https://lists.archlinux.org/archives/list/arch-dev-public&#64;lists.archlinux.org/thread/5GU7ZUFI25T2IRXIQ62YYERQKIPE3U6E/</a>&gt;`__</p>
+<p>Ubuntu bug report
+&lt;<a class="reference external" href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792">https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2057792</a>&gt;`__</p>
+<p>Ubuntu Patch
+&lt;<a class="reference external" href="https://git.launchpad.net/ubuntu/+source/procps/commit/?h=applied/2%254.0.4-4ubuntu2&amp;id=b4a4a046cf018a942598e55f3fbc7b5ef474f676">https://git.launchpad.net/ubuntu/+source/procps/commit/?h=applied/2%254.0.4-4ubuntu2&amp;id=b4a4a046cf018a942598e55f3fbc7b5ef474f676</a>&gt;`__</p>
+<p>Fedora wiki on the change
+&lt;<a class="reference external" href="https://fedoraproject.org/wiki/Changes/IncreaseVmMaxMapCount">https://fedoraproject.org/wiki/Changes/IncreaseVmMaxMapCount</a>&gt;`__</p>
+<p><a class="reference external" href="https://github.com/NixOS/nixpkgs/pull/238459">NixOS PR</a></p>
+<p>See also: <a class="reference external" href="https://docs.kernel.org/admin-guide/sysctl/vm.html#max-map-count">kernel docs on max-mem-count</a></p>
+</div>
+<div class="section" id="userspace-namespaces">
+<h2><a class="toc-backref" href="#toc-entry-28">Userspace Namespaces</a></h2>
+<p>The security of userspace linux namespaces has always been under debate. For a
+while, a few distros had it disabled via a kernel patch.</p>
+<pre class="literal-block">
+λ ./tests/userns_clone.sh
+arch.out -&gt; kernel.unprivileged_userns_clone = 1
+debian.out -&gt; kernel.unprivileged_userns_clone = 1
+ubuntu.out -&gt; kernel.unprivileged_userns_clone = 1
+</pre>
+<p>Although now, they have now been reverted back to default allowed.</p>
+<p><a class="reference external" href="https://gitlab.archlinux.org/archlinux/packaging/packages/linux-lts/-/blob/main/0001-ZEN-Add-sysctl-and-CONFIG-to-disallow-unprivileged-C.patch">Arch Source</a></p>
+<p><a class="reference external" href="https://salsa.debian.org/kernel-team/linux/-/blob/master/debian/patches/debian/add-sysctl-to-disallow-unprivileged-CLONE_NEWUSER-by-default.patch">Debian Patch</a></p>
+<p><a class="reference external" href="https://superuser.com/a/1122977">See also</a></p>
+</div>
+<div class="section" id="ping">
+<h2><a class="toc-backref" href="#toc-entry-29">ping</a></h2>
+<p>Sometimes, ping will not work in an unshare namespaced environment.</p>
+<pre class="literal-block">
+λ ./tests/ping.sh
+centos.err -&gt; unshare: unshare failed: Invalid argument
+debian.err -&gt; ping: socktype: SOCK_RAW ping: socket: Operation not permitted
+gentoo.err -&gt; ping: socktype: SOCK_RAW ping: socket: Operation not permitted
+oracle.err -&gt; unshare: unshare failed: Invalid argument
+</pre>
+<p>However, we're able to pinping exactly why that happens from another
+experiment.</p>
+<p><tt class="docutils literal">./tests/ping2.sh</tt> then we're mapping the output data of the sysctl option of
+<tt class="docutils literal">net.ipv4.ping_group_range</tt> to a table below.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="26%" />
+<col width="44%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Distro</th>
+<th class="head">Min</th>
+<th class="head">Max</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RHEL</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>CentOS</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr><td>Rocky</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>Fedora</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>Alma</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>Oracle</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr><td>Debian</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr><td>Ubuntu</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>Alpine</td>
+<td>999</td>
+<td>59999</td>
+</tr>
+<tr><td>Arch</td>
+<td>0</td>
+<td>2147483647</td>
+</tr>
+<tr><td>Gentoo</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>This gets the data from sysctl. And we're able to see that centos, debian,
+gentoo, and oracle all has the ping group range set to 0 and 1, which are only
+privileged groups. Although on Centos and oracle it fails earlier due to the
+unshare userspace package lacking one of the flags we're invoking.</p>
+<p>However, on userspace in those distros you're able to ping due to the
+capabilities set on the ping binary, which was somehow dropped when we enter
+into the unshared environment.</p>
+<hr class="docutils" />
+<p>Thanks for reading.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
