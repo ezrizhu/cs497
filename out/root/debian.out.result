@@ -1,0 +1,26 @@
+  
+.  
+..  
+bin -> usr/bin
+boot  
+dev  
+etc  
+home  
+initrd.img -> boot/initrd.img-6.1.0-17-amd64
+initrd.img.old -> boot/initrd.img-6.1.0-15-amd64
+lib64 -> usr/lib64
+lib -> usr/lib
+lost+found  
+media  
+mnt  
+opt  
+proc  
+root  
+run  
+sbin -> usr/sbin
+srv  
+sys  
+tmp  
+usr  
+var  
+vmlinuz -> boot/vmlinuz-6.1.0-17-amd64

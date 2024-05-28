@@ -1,0 +1,26 @@
+  
+.  
+..  
+bin -> usr/bin
+boot  
+dev  
+etc  
+home  
+lib32 -> usr/lib32
+lib64 -> usr/lib64
+lib -> usr/lib
+libx32 -> usr/libx32
+lost+found  
+media  
+mnt  
+opt  
+proc  
+root  
+run  
+sbin -> usr/sbin
+snap  
+srv  
+swap.img  
+sys  
+tmp  
+usr  
