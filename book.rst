@@ -30,7 +30,7 @@ security researchers. This book, code used throughout, and results are all
 available on `Github <https://github.com/ezrizhu/cs497>`_ under the MIT
 License.
 
-This document was created by `Ezri Zhu <https://ezrizhu.com>`>_ as their final
+This document was created by `Ezri Zhu <https://ezrizhu.com>`_ as their final
 project for CS 497 Independent Study at the Stevens Institute of Technology,
 advised by Professor `Michael Greenberg
 <https://www.stevens.edu/profile/mgreenbe>`_.
